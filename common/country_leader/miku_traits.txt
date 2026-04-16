@@ -278,7 +278,7 @@ leader_traits = {
 		spotting_chance = 0.39		# 索敌几率+39%
 		strike_force_movement_org_loss = -0.39		# 打击舰队移动组织度损失-39%
 		sub_retreat_speed = 0.39		# 潜艇撤退速度+39%
-		submarine_attack = 0.39		# 潜艇攻击+39%
+		submarine_attack = 1		# 潜艇攻击+1
 		transport_capacity = -0.39		# 运输容量-39%
 		# 空军
 		ace_effectiveness_factor = 0.39		# 王牌效率+39%

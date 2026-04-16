@@ -9,6 +9,7 @@ country_event = {
 		name = miku.0.a
 		# 退休当前领导人
 		retire_country_leader = yes
+		set_country_flag = miku_leader_installed_flag
 		# 根据当前执政党创建 miku
 		if = {
 			limit = {
