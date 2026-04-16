@@ -1,0 +1,103 @@
+add_namespace = miku
+country_event = {
+	id = miku.0
+	title = miku.0.t
+	desc = miku.0.d
+	picture = GFX_report_event_miku_0
+	is_triggered_only = yes
+	option = {
+		name = miku.0.a
+		# 移除当前领导人
+		retire_country_leader = yes
+		# 根据当前执政党创建 miku
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			create_country_leader = {
+				name = miku_name
+				desc = miku_country_leader_desc
+				picture = "GFX_portrait_miku"
+				ideology = nazism
+				traits = {
+					economic_plan_39
+					technology_39
+					hand_in_hand
+					inspiring_music
+					smoothing_music
+					irresistible_princess
+					world_is_mine
+					mikufans
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			create_country_leader = {
+				name = miku_name
+				desc = miku_country_leader_desc
+				picture = "GFX_portrait_miku"
+				ideology = conservatism
+				traits = {
+					economic_plan_39
+					technology_39
+					hand_in_hand
+					inspiring_music
+					smoothing_music
+					irresistible_princess
+					world_is_mine
+					mikufans
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			create_country_leader = {
+				name = miku_name
+				desc = miku_country_leader_desc
+				picture = "GFX_portrait_miku"
+				ideology = marxism
+				traits = {
+					economic_plan_39
+					technology_39
+					hand_in_hand
+					inspiring_music
+					smoothing_music
+					irresistible_princess
+					world_is_mine
+					mikufans
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			create_country_leader = {
+				name = miku_name
+				desc = miku_country_leader_desc
+				picture = "GFX_portrait_miku"
+				ideology = despotism
+				traits = {
+					economic_plan_39
+					technology_39
+					hand_in_hand
+					inspiring_music
+					smoothing_music
+					irresistible_princess
+					world_is_mine
+					mikufans
+				}
+			}
+		}
+		add_political_power = 100
+	}
+	option = {
+		name = miku.0.b
+		set_country_flag = miku_rejected_flag
+	}
+}

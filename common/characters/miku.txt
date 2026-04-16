@@ -1,0 +1,10 @@
+characters = {
+	miku = {
+		name = miku_name
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_miku"
+			}
+		}
+	}
+}
