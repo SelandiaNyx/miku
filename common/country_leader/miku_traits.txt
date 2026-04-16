@@ -1,5 +1,4 @@
 leader_traits = {
-	# --- 国家发展与经济计划 ---
 	economic_plan_39 = {
 		# 39经济计划
 		random = no		# 是否随机分配
@@ -31,7 +30,6 @@ leader_traits = {
 		research_sharing_per_country_bonus_factor = 0.39		# 科技共享加成+39%
 		research_speed_factor = 0.39		# 科研速度+39%
 	}
-	# --- 社会影响与情感连接 ---
 	hand_in_hand = {
 		# 音乐将你我相连
 		random = no		# 是否随机分配
@@ -51,7 +49,6 @@ leader_traits = {
 		party_popularity_stability_factor = 0.39		# 党派支持度对稳定度修正+39%
 		stability_weekly_factor = 0.005		# 每周稳定度+0.5%
 	}
-	# --- 外交与权力扩张 ---
 	irresistible_princess = {
 		# 不容拒绝的公主殿下
 		random = no		# 是否随机分配
@@ -65,7 +62,6 @@ leader_traits = {
 		send_volunteers_tension = -1		# 派遣志愿军的紧张度限制-100%
 		trade_opinion_factor = 0.39		# 贸易影响力系数+39%
 	}
-	# --- 核心领袖特质 ---
 	world_is_mine = {
 		# 世界第一的公主殿下
 		# 特质ID
@@ -74,7 +70,6 @@ leader_traits = {
 		master_ideology_drift = 0.01		# 主要意识形态变化+0.01
 		political_power_factor = 0.39		# 政治点数+39%
 	}
-	# --- 军队 ---
 	mikufans = {
 		# 骑士团
 		random = no
