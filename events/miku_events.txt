@@ -7,7 +7,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = miku.0.a
-		# 移除当前领导人
+		# 退休当前领导人
 		retire_country_leader = yes
 		# 根据当前执政党创建 miku
 		if = {
@@ -15,7 +15,7 @@ country_event = {
 				has_government = fascism
 			}
 			create_country_leader = {
-				name = miku_name
+				name = "VOC_miku"
 				desc = miku_country_leader_desc
 				picture = "GFX_portrait_miku"
 				ideology = nazism
@@ -36,7 +36,7 @@ country_event = {
 				has_government = democratic
 			}
 			create_country_leader = {
-				name = miku_name
+				name = "VOC_miku"
 				desc = miku_country_leader_desc
 				picture = "GFX_portrait_miku"
 				ideology = conservatism
@@ -57,7 +57,7 @@ country_event = {
 				has_government = communism
 			}
 			create_country_leader = {
-				name = miku_name
+				name = "VOC_miku"
 				desc = miku_country_leader_desc
 				picture = "GFX_portrait_miku"
 				ideology = marxism
@@ -78,7 +78,7 @@ country_event = {
 				has_government = neutrality
 			}
 			create_country_leader = {
-				name = miku_name
+				name = "VOC_miku"
 				desc = miku_country_leader_desc
 				picture = "GFX_portrait_miku"
 				ideology = despotism
@@ -95,6 +95,9 @@ country_event = {
 			}
 		}
 		add_political_power = 100
+		hidden_effect = {
+			remove_decision = miku_become_leader
+		}
 	}
 	option = {
 		name = miku.0.b

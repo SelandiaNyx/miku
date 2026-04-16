@@ -1,0 +1,29 @@
+miku_category = {
+	miku_become_leader = {
+		icon = generic_political_reform
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_country_flag = miku_rejected_flag
+			}
+			NOT = {
+				has_country_leader = {
+					ruling_only = yes
+					character = VOC_miku
+				}
+			}
+		}
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			country_event = {
+				id = miku.0
+			}
+		}
+	}
+}
