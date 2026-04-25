@@ -1,10 +1,5 @@
-﻿l_simp_chinese:
+﻿# localisation\simp_chinese\all_traits_l_simp_chinese.yml
+l_simp_chinese:
 
-  economic_plan_39:0 "39经济计划"
-  technology_39:0 "39科技"
-  hand_in_hand:0 "音乐将你我相连"
-  inspiring_music:0 "激励士气的音乐"
-  smoothing_music:0 "安抚人心的音乐"
-  irresistible_princess:0 "不容拒绝的公主殿下"
   world_is_mine:0 "世界第一的公主殿下"
-  mikufans:0 "骑士团"
+  hand_in_hand:0 "音乐将你我相连"

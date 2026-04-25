@@ -1,0 +1,287 @@
+# common/decisions/miku_spirit_decisions.txt
+miku_spirit_category = {
+	miku_add_spirit_1 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_1_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = mikufans_army
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = mikufans_army
+		}
+	}
+	miku_add_spirit_2 = {
+		icon = generic_economic_reform
+		desc = miku_add_spirit_2_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = mikufans_navy
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = mikufans_navy
+		}
+	}
+	miku_add_spirit_3 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_3_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = mikufans_air
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = mikufans_air
+		}
+	}
+	miku_add_spirit_4 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_4_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = mikufans_leader_military_academy
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = mikufans_leader_military_academy
+		}
+	}
+	miku_add_spirit_5 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_5_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = mikufans_officer_corps
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = mikufans_officer_corps
+		}
+	}
+	miku_add_spirit_6 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_6_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = miku_concert_tour
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = miku_concert_tour
+		}
+	}
+	miku_add_spirit_7 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_7_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = miku_security_apparatus
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = miku_security_apparatus
+		}
+	}
+	miku_add_spirit_8 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_8_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = miku_government
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = miku_government
+		}
+	}
+	miku_add_spirit_9 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_9_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = miku_cabinet
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = miku_cabinet
+		}
+	}
+	miku_add_spirit_10 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_10_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = miku_industry
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = miku_industry
+		}
+	}
+	miku_add_spirit_11 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_11_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = miku_construction_project
+			}
+		}
+		cost = 300
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			add_ideas = miku_construction_project
+		}
+	}
+	miku_add_spirit_12 = {
+		icon = generic_political_reform
+		desc = miku_add_spirit_12_desc
+		allowed = {
+			original_tag = ROOT
+		}
+		visible = {
+			NOT = {
+				has_idea = miku_ai
+			}
+		}
+		available = {
+			is_ai = no
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			add_ideas = miku_ai
+		}
+	}
+}

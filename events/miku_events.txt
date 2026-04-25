@@ -1,3 +1,4 @@
+# events\miku_events.txt
 add_namespace = miku
 country_event = {
 	id = miku.0
@@ -21,14 +22,8 @@ country_event = {
 				picture = "GFX_portrait_miku"
 				ideology = nazism
 				traits = {
-					economic_plan_39
-					technology_39
-					hand_in_hand
-					inspiring_music
-					smoothing_music
-					irresistible_princess
 					world_is_mine
-					mikufans
+					hand_in_hand
 				}
 			}
 		}
@@ -42,14 +37,8 @@ country_event = {
 				picture = "GFX_portrait_miku"
 				ideology = conservatism
 				traits = {
-					economic_plan_39
-					technology_39
-					hand_in_hand
-					inspiring_music
-					smoothing_music
-					irresistible_princess
 					world_is_mine
-					mikufans
+					hand_in_hand
 				}
 			}
 		}
@@ -63,14 +52,8 @@ country_event = {
 				picture = "GFX_portrait_miku"
 				ideology = marxism
 				traits = {
-					economic_plan_39
-					technology_39
-					hand_in_hand
-					inspiring_music
-					smoothing_music
-					irresistible_princess
 					world_is_mine
-					mikufans
+					hand_in_hand
 				}
 			}
 		}
@@ -84,18 +67,13 @@ country_event = {
 				picture = "GFX_portrait_miku"
 				ideology = despotism
 				traits = {
-					economic_plan_39
-					technology_39
-					hand_in_hand
-					inspiring_music
-					smoothing_music
-					irresistible_princess
 					world_is_mine
-					mikufans
+					hand_in_hand
 				}
 			}
 		}
 		add_political_power = 100
+		set_country_flag = miku_spirit_framework_unlocked
 		hidden_effect = {
 			remove_decision = miku_become_leader
 		}

@@ -1,3 +1,4 @@
+# interface\miku_portraits.gfx
 spriteTypes = {
     # 定义头像的 GFX 键名
     spriteType = {

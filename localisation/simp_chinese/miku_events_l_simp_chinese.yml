@@ -1,4 +1,5 @@
-﻿l_simp_chinese:
+﻿# localisation\simp_chinese\miku_events_l_simp_chinese.yml
+l_simp_chinese:
 
   miku.0.t:0 "初音未来的到来"
   miku.0.d:0 "初音未来突然出现在你的国家，她的出现引起了全国的轰动。人们纷纷前来欢迎这位虚拟歌手的到来。她的音乐才华和魅力让人们为之倾倒。人民希望她成为国家领袖，带领国家走向繁荣和创新。"

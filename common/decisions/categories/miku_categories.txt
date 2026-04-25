@@ -1,3 +1,4 @@
+# common\decisions\categories\miku_categories.txt
 miku_category = {
 	icon = generic_decision
 	allowed = {

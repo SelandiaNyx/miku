@@ -1,3 +1,4 @@
+# common\characters\miku_characters.txt
 characters = {
 	VOC_miku = {
 		name = VOC_miku

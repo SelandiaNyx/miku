@@ -1,0 +1,12 @@
+# common/decisions/categories/miku_spirit_categories.txt
+miku_spirit_category = {
+	icon = generic_decision
+	allowed = {
+		original_tag = ROOT
+	}
+	# 只有在事件 miku.0.a 中获得了这个 flag 才会显示此框架
+	visible = {
+		has_country_flag = miku_spirit_framework_unlocked
+	}
+    priority = 10
+}
