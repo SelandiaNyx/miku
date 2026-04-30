@@ -1,0 +1,61 @@
+# common\decisions\miku_extra_resource_decisions.txt
+miku_extra_resource_category = {
+	miku_extra_resource = {
+		icon = generic_decision
+		desc = miku_extra_resource_desc
+		state_target = any_owned_state
+		available = {
+			is_ai = no
+			has_country_flag = miku_extra_resource_unlocked
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				infrastructure = 5
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 0
+		complete_effect = {
+			add_resource = {
+				type = steel
+				amount = 4
+				state = FROM
+			}
+			add_resource = {
+				type = aluminium
+				amount = 4
+				state = FROM
+			}
+			add_resource = {
+				type = tungsten
+				amount = 4
+				state = FROM
+			}
+			add_resource = {
+				type = chromium
+				amount = 4
+				state = FROM
+			}
+			add_resource = {
+				type = oil
+				amount = 4
+				state = FROM
+			}
+			add_resource = {
+				type = rubber
+				amount = 4
+				state = FROM
+			}
+			add_resource = {
+				type = coal
+				amount = 4
+				state = FROM
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+}

@@ -1,0 +1,878 @@
+focus_tree = {
+	id = miku_focus_tree
+	country = {
+		factor = 1
+	}
+	default = no
+	focus = {
+		id = miku_focus_political_1
+		x = 6
+		y = 1
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_political_power = 140
+		}
+	}
+	focus = {
+		id = miku_focus_industry_1
+		x = 13
+		y = 1
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_ideas = industrial_restructuring_ongoing
+		}
+	}
+	focus = {
+		id = miku_focus_military_1
+		x = 28
+		y = 1
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		completion_reward = {
+			add_ideas = miku_mikufans
+		}
+	}
+	focus = {
+		id = miku_focus_political_2
+		x = 6
+		y = 2
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_1
+		}
+		completion_reward = {
+			add_stability = 0.5
+		}
+	}
+	focus = {
+		id = miku_focus_industry_2_1
+		x = 11
+		y = 2
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_1
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_industry_2_2
+		x = 13
+		y = 2
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_1
+		}
+		completion_reward = {
+			add_ideas = crash_research
+		}
+	}
+	focus = {
+		id = miku_focus_industry_2_3
+		x = 15
+		y = 2
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_1
+		}
+		completion_reward = {
+			capital_scope = {
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = aluminium
+					amount = 4
+				}
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+				add_resource = {
+					type = chromium
+					amount = 4
+				}
+				add_resource = {
+					type = oil
+					amount = 4
+				}
+				add_resource = {
+					type = rubber
+					amount = 4
+				}
+				add_resource = {
+					type = coal
+					amount = 4
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_2_1
+		x = 21
+		y = 2
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_1
+		}
+		completion_reward = {
+			add_ideas = mikufans_navy_1
+		}
+	}
+	focus = {
+		id = miku_focus_military_2_2
+		x = 29
+		y = 2
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_1
+		}
+		completion_reward = {
+			add_ideas = mikufans_army_1
+		}
+	}
+	focus = {
+		id = miku_focus_military_2_3
+		x = 35
+		y = 2
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_1
+		}
+		completion_reward = {
+			add_ideas = mikufans_air_1
+		}
+	}
+	focus = {
+		id = miku_focus_political_branch_neutrality_1
+		x = 3
+		y = 3
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = miku_focus_political_branch_democratic_1
+			focus = miku_focus_political_branch_fascism_1
+			focus = miku_focus_political_branch_communism_1
+		}
+		prerequisite = {
+			focus = miku_focus_political_2
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "VOC_miku"
+				desc = miku_country_leader_desc
+				picture = "GFX_portrait_miku"
+				ideology = despotism
+				traits = {
+					world_is_mine_neutrality
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_branch_democratic_1
+		x = 5
+		y = 3
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = miku_focus_political_branch_neutrality_1
+			focus = miku_focus_political_branch_fascism_1
+			focus = miku_focus_political_branch_communism_1
+		}
+		prerequisite = {
+			focus = miku_focus_political_2
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "VOC_miku"
+				desc = miku_country_leader_desc
+				picture = "GFX_portrait_miku"
+				ideology = conservatism
+				traits = {
+					world_is_mine_democratic
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_branch_fascism_1
+		x = 7
+		y = 3
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = miku_focus_political_branch_democratic_1
+			focus = miku_focus_political_branch_neutrality_1
+			focus = miku_focus_political_branch_communism_1
+		}
+		prerequisite = {
+			focus = miku_focus_political_2
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "VOC_miku"
+				desc = miku_country_leader_desc
+				picture = "GFX_portrait_miku"
+				ideology = nazism
+				traits = {
+					world_is_mine_fascism
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_branch_communism_1
+		x = 9
+		y = 3
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		mutually_exclusive = {
+			focus = miku_focus_political_branch_fascism_1
+			focus = miku_focus_political_branch_democratic_1
+			focus = miku_focus_political_branch_neutrality_1
+		}
+		prerequisite = {
+			focus = miku_focus_political_2
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.5
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			create_country_leader = {
+				name = "VOC_miku"
+				desc = miku_country_leader_desc
+				picture = "GFX_portrait_miku"
+				ideology = marxism
+				traits = {
+					world_is_mine_communism
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_industry_3
+		x = 13
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_2_1
+		}
+		prerequisite = {
+			focus = miku_focus_industry_2_2
+		}
+		prerequisite = {
+			focus = miku_focus_industry_2_3
+		}
+		completion_reward = {
+			set_country_flag = miku_infrastructure_unlocked
+			custom_effect_tooltip = miku_infrastructure_unlocked_tt
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_1_1
+		x = 17
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_submarine_bonus
+				bonus = 1
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_1_2
+		x = 19
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_destroyer_bonus
+				bonus = 1
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_1_3
+		x = 21
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_cruiser_bonus
+				bonus = 1
+				uses = 2
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_1_4
+		x = 23
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_capital_bonus
+				bonus = 1
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_1_5
+		x = 25
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_carrier_bonus
+				bonus = 1
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_2_1
+		x = 27
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_support_bonus
+				bonus = 1
+				uses = 2
+				category = support_tech
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_2_2
+		x = 29
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_artillery_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_2_3
+		x = 31
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_armor_bonus
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_3_1
+		x = 33
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_light_air_bonus
+				bonus = 1
+				uses = 2
+				category = light_air
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_3_2
+		x = 35
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_medium_air_bonus
+				bonus = 1
+				uses = 2
+				category = medium_air
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_3_3
+		x = 37
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_3
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_heavy_air_bonus
+				bonus = 1
+				uses = 2
+				category = heavy_air
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_4_1
+		x = 3
+		y = 4
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_branch_neutrality_1
+		}
+		completion_reward = {
+			add_stability = 0.3
+		}
+	}
+	focus = {
+		id = miku_focus_political_4_2
+		x = 5
+		y = 4
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_branch_democratic_1
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = miku_focus_political_4_3
+		x = 7
+		y = 4
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_branch_fascism_1
+		}
+		completion_reward = {
+			add_war_support = 0.15
+			add_manpower = 10000
+		}
+	}
+	focus = {
+		id = miku_focus_political_4_4
+		x = 9
+		y = 4
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_branch_communism_1
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = miku_focus_industry_4
+		x = 13
+		y = 4
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_3
+		}
+		completion_reward = {
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = crash_research
+				add_idea = quality_education
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_4_1
+		x = 21
+		y = 4
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_3_1_1
+			focus = miku_focus_military_3_1_2
+			focus = miku_focus_military_3_1_3
+			focus = miku_focus_military_3_1_4
+			focus = miku_focus_military_3_1_5
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mikufans_navy_1
+				add_idea = mikufans_navy_2
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_4_2
+		x = 29
+		y = 4
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_3_2_1
+			focus = miku_focus_military_3_2_2
+			focus = miku_focus_military_3_2_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mikufans_army_1
+				add_idea = mikufans_army_2
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_4_3
+		x = 35
+		y = 4
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_3_3_1
+			focus = miku_focus_military_3_3_2
+			focus = miku_focus_military_3_3_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mikufans_air_1
+				add_idea = mikufans_air_2
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_industry_5
+		x = 13
+		y = 5
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_4
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = industrial_restructuring_ongoing
+				add_idea = standardized_production
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_5_1
+		x = 21
+		y = 5
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_4_1
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mikufans_navy_2
+				add_idea = mikufans_navy_3
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_5_2
+		x = 29
+		y = 5
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_4_2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mikufans_army_2
+				add_idea = mikufans_army_3
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_5_3
+		x = 35
+		y = 5
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_4_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mikufans_air_2
+				add_idea = mikufans_air_3
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_industry_6
+		x = 13
+		y = 6
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_5
+		}
+		completion_reward = {
+			set_country_flag = miku_expand_state_slots_unlocked
+			custom_effect_tooltip = miku_expand_state_slots_unlocked_tt
+		}
+	}
+	focus = {
+		id = miku_focus_military_6
+		x = 28
+		y = 6
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_5_1
+		}
+		prerequisite = {
+			focus = miku_focus_military_5_2
+		}
+		prerequisite = {
+			focus = miku_focus_military_5_3
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = mikufans_army_3
+				add_idea = mikufans_army_4
+			}
+			swap_ideas = {
+				remove_idea = mikufans_navy_3
+				add_idea = mikufans_navy_4
+			}
+			swap_ideas = {
+				remove_idea = mikufans_air_3
+				add_idea = mikufans_air_4
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_industry_7_1
+		x = 12
+		y = 7
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_6
+		}
+		completion_reward = {
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = quality_education
+				add_idea = eminent_talents
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_industry_7_2
+		x = 14
+		y = 7
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_6
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = standardized_production
+				add_idea = modernized_industry
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_industry_8_1
+		x = 12
+		y = 8
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_7_1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			swap_ideas = {
+				remove_idea = eminent_talents
+				add_idea = constellation_of_talents
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_industry_8_2
+		x = 14
+		y = 8
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_7_2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = modernized_industry
+				add_idea = hyper_efficient_industry
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_extra_resource
+		x = 15
+		y = 4
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_industry_3
+		}
+		prerequisite = {
+			focus = miku_focus_industry_2_3
+		}
+		completion_reward = {
+			set_country_flag = miku_extra_resource_unlocked
+			custom_effect_tooltip = miku_extra_resource_unlocked_tt
+		}
+	}
+}

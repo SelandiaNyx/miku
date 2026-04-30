@@ -1,52 +1,66 @@
+# interface\miku_ideas.gfx
 spriteTypes = {
+	# mikufans_army
 	spriteType = {
-		name = "GFX_idea_mikufans_army"
-		texturefile = "gfx/interface/ideas/mikufans_army.dds"
+		name = "GFX_idea_mikufans_army_1"
+		textureFile = "gfx/interface/ideas/mikufans_army.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_mikufans_navy"
-		texturefile = "gfx/interface/ideas/mikufans_navy.dds"
+		name = "GFX_idea_mikufans_army_2"
+		textureFile = "gfx/interface/ideas/mikufans_army.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_mikufans_air"
-		texturefile = "gfx/interface/ideas/mikufans_air.dds"
+		name = "GFX_idea_mikufans_army_3"
+		textureFile = "gfx/interface/ideas/mikufans_army.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_mikufan_leader_military_academy"
-		texturefile = "gfx/interface/ideas/mikufans_leader_military_academy.dds"
+		name = "GFX_idea_mikufans_army_4"
+		textureFile = "gfx/interface/ideas/mikufans_army.dds"
+	}
+	# mikufans_navy
+	spriteType = {
+		name = "GFX_idea_mikufans_navy_1"
+		textureFile = "gfx/interface/ideas/mikufans_navy.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_mikufans_officer_corps"
-		texturefile = "gfx/interface/ideas/mikufans_officer_corps.dds"
+		name = "GFX_idea_mikufans_navy_2"
+		textureFile = "gfx/interface/ideas/mikufans_navy.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_miku_concert_tour"
-		texturefile = "gfx/interface/ideas/miku_concert_tour.dds"
+		name = "GFX_idea_mikufans_navy_3"
+		textureFile = "gfx/interface/ideas/mikufans_navy.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_miku_security_apparatus"
-		texturefile = "gfx/interface/ideas/miku_security_apparatus.dds"
+		name = "GFX_idea_mikufans_navy_4"
+		textureFile = "gfx/interface/ideas/mikufans_navy.dds"
+	}
+	# mikufans_air
+	spriteType = {
+		name = "GFX_idea_mikufans_air_1"
+		textureFile = "gfx/interface/ideas/mikufans_air.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_miku_government"
-		texturefile = "gfx/interface/ideas/miku_government.dds"
+		name = "GFX_idea_mikufans_air_2"
+		textureFile = "gfx/interface/ideas/mikufans_air.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_miku_cabinet"
-		texturefile = "gfx/interface/ideas/miku_cabinet.dds"
+		name = "GFX_idea_mikufans_air_3"
+		textureFile = "gfx/interface/ideas/mikufans_air.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_miku_industry"
-		texturefile = "gfx/interface/ideas/miku_industry.dds"
+		name = "GFX_idea_mikufans_air_4"
+		textureFile = "gfx/interface/ideas/mikufans_air.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_miku_construction_project"
-		texturefile = "gfx/interface/ideas/miku_construction_project.dds"
+		name = "GFX_idea_hyper_efficient_industry"
+		textureFile = "gfx/interface/ideas/hyper_efficient_industry.dds"
 	}
-	# 如果你还有其他 spirit 的 .dds 文件，继续按这个格式加进去
-	# 例如：
-	# spriteType = {
-	#     name = "GFX_idea_mikufan_leader_military_academy"
-	#     texturefile = "gfx/interface/ideas/mikufan_leader_military_academy.dds"
-	# }
+	spriteType = {
+		name = "GFX_idea_constellation_of_talents"
+		textureFile = "gfx/interface/ideas/constellation_of_talents.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miku_mikufans"
+		textureFile = "gfx/interface/ideas/miku_mikufans.dds"
+	}
 }

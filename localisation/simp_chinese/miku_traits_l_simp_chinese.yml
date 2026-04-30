@@ -1,5 +1,7 @@
 ﻿# localisation\simp_chinese\all_traits_l_simp_chinese.yml
 l_simp_chinese:
 
-  world_is_mine:0 "世界第一的公主殿下"
-  hand_in_hand:0 "音乐将你我相连"
+  world_is_mine_neutrality:0 "世界第一的公主殿下"
+  world_is_mine_democratic:0 "世界第一的公主殿下"
+  world_is_mine_fascism:0 "世界第一的公主殿下"
+  world_is_mine_communism:0 "世界第一的公主殿下"

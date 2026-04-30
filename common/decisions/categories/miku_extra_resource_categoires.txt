@@ -1,0 +1,11 @@
+# common\decisions\categories\miku_extra_resource_categoires.txt
+miku_extra_resource_category = {
+	icon = generic_decision
+	allowed = {
+		original_tag = ROOT
+	}
+	visible = {
+		has_country_flag = miku_extra_resource_unlocked
+	}
+	priority = 8
+}

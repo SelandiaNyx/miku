@@ -1,0 +1,11 @@
+# common\decisions\categories\miku_expand_state_slots_categories.txt
+miku_expand_state_slots_category = {
+	icon = generic_decision
+	allowed = {
+		original_tag = ROOT
+	}
+	visible = {
+		has_country_flag = miku_expand_state_slots_unlocked
+	}
+	priority = 8
+}

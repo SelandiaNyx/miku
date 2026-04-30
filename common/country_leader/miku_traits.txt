@@ -1,29 +1,26 @@
 leader_traits = {
-	# ==========================================
-	# 0.39. 世界第一的公主殿下 (政治内政)
-	# ==========================================
-	world_is_mine = {
+	world_is_mine_neutrality = {
 		random = no
-		stability_factor = 0.39
-		research_speed_factor = 0.39
+		stability_factor = 0.1
+		neutrality_drift = 0.01
+		political_power_gain = 0.5
 	}
-	# ==========================================
-	# 2. 外交 (外交、附庸、占领区)
-	# ==========================================
-	hand_in_hand = {
+	world_is_mine_democratic = {
 		random = no
-		send_volunteers_tension = -0.39
-		justify_war_goal_when_in_major_war_time = -0.39
-		enemy_declare_war_tension = 0.39
-		puppet_cost_factor = -0.39
-		can_master_build_for_us = 0.39
-		master_build_autonomy_factor = 0.39
-		cic_to_overlord_factor = 0.39
-		mic_to_overlord_factor = 0.39
-		resources_to_overlord_factor = 0.39
-		extra_trade_to_overlord_factor = 0.39
-		overlord_trade_cost_factor = -0.39
-		compliance_growth = 0.39
-		resistance_decay = 0.39
+		stability_factor = 0.1
+		democratic_drift = 0.01
+		political_power_gain = 0.5
+	}
+	world_is_mine_fascism = {
+		random = no
+		stability_factor = 0.1
+		fascism_drift = 0.01
+		political_power_gain = 0.5
+	}
+	world_is_mine_communism = {
+		random = no
+		stability_factor = 0.1
+		communism_drift = 0.01
+		political_power_gain = 0.5
 	}
 }
