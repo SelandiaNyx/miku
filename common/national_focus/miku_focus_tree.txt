@@ -192,13 +192,59 @@ focus_tree = {
 				elections_allowed = no
 			}
 			create_country_leader = {
-				name = "VOC_miku"
-				desc = miku_country_leader_desc
-				picture = "GFX_portrait_miku"
+				name = VOC_miku
+				picture = GFX_portrait_miku
 				ideology = despotism
 				traits = {
 					world_is_mine_neutrality
 					power_of_sing
+				}
+			}
+			create_field_marshal = {
+				name = VOC_miku
+				picture = GFX_portrait_miku
+				skill = 5
+				attack_skill = 9
+				defense_skill = 9
+				planning_skill = 9
+				logistics_skill = 9
+				traits = {
+					organizer
+					logistics_wizard
+					thorough_planner
+					panzer_leader
+					panzer_expert
+					cavalry_leader
+					trait_engineer
+					fortress_buster
+					aggressive_assaulter
+					offensive_doctrine
+					infantry_leader
+					ambusher
+					organisational_leader
+					naval_invader
+					invader_ii
+					naval_liason
+					inspirational_leader
+					commando
+					skirmisher
+					paratrooper
+					camouflage_expert
+					trickster
+					expert_improviser
+					guerilla_fighter
+					skilled_staffer
+					expert_delegator
+					desert_fox
+					swamp_fox
+					hill_fighter
+					trait_mountaineer
+					urban_assault_specialist
+					ranger
+					jungle_rat
+					winter_specialist
+					adaptable
+					winter_expert
 				}
 			}
 		}
@@ -229,12 +275,58 @@ focus_tree = {
 			}
 			create_country_leader = {
 				name = "VOC_miku"
-				desc = miku_country_leader_desc
 				picture = "GFX_portrait_miku"
 				ideology = conservatism
 				traits = {
 					world_is_mine_democratic
 					power_of_sing
+				}
+			}
+			create_field_marshal = {
+				name = VOC_miku
+				picture = GFX_portrait_miku
+				skill = 5
+				attack_skill = 9
+				defense_skill = 9
+				planning_skill = 9
+				logistics_skill = 9
+				traits = {
+					organizer
+					logistics_wizard
+					thorough_planner
+					panzer_leader
+					panzer_expert
+					cavalry_leader
+					trait_engineer
+					fortress_buster
+					aggressive_assaulter
+					offensive_doctrine
+					infantry_leader
+					ambusher
+					organisational_leader
+					naval_invader
+					invader_ii
+					naval_liason
+					inspirational_leader
+					commando
+					skirmisher
+					paratrooper
+					camouflage_expert
+					trickster
+					expert_improviser
+					guerilla_fighter
+					skilled_staffer
+					expert_delegator
+					desert_fox
+					swamp_fox
+					hill_fighter
+					trait_mountaineer
+					urban_assault_specialist
+					ranger
+					jungle_rat
+					winter_specialist
+					adaptable
+					winter_expert
 				}
 			}
 		}
@@ -265,12 +357,58 @@ focus_tree = {
 			}
 			create_country_leader = {
 				name = "VOC_miku"
-				desc = miku_country_leader_desc
 				picture = "GFX_portrait_miku"
 				ideology = nazism
 				traits = {
 					world_is_mine_fascism
 					power_of_sing
+				}
+			}
+			create_field_marshal = {
+				name = VOC_miku
+				picture = GFX_portrait_miku
+				skill = 5
+				attack_skill = 9
+				defense_skill = 9
+				planning_skill = 9
+				logistics_skill = 9
+				traits = {
+					organizer
+					logistics_wizard
+					thorough_planner
+					panzer_leader
+					panzer_expert
+					cavalry_leader
+					trait_engineer
+					fortress_buster
+					aggressive_assaulter
+					offensive_doctrine
+					infantry_leader
+					ambusher
+					organisational_leader
+					naval_invader
+					invader_ii
+					naval_liason
+					inspirational_leader
+					commando
+					skirmisher
+					paratrooper
+					camouflage_expert
+					trickster
+					expert_improviser
+					guerilla_fighter
+					skilled_staffer
+					expert_delegator
+					desert_fox
+					swamp_fox
+					hill_fighter
+					trait_mountaineer
+					urban_assault_specialist
+					ranger
+					jungle_rat
+					winter_specialist
+					adaptable
+					winter_expert
 				}
 			}
 		}
@@ -301,12 +439,58 @@ focus_tree = {
 			}
 			create_country_leader = {
 				name = "VOC_miku"
-				desc = miku_country_leader_desc
 				picture = "GFX_portrait_miku"
 				ideology = marxism
 				traits = {
 					world_is_mine_communism
 					power_of_sing
+				}
+			}
+			create_field_marshal = {
+				name = VOC_miku
+				picture = GFX_portrait_miku
+				skill = 5
+				attack_skill = 9
+				defense_skill = 9
+				planning_skill = 9
+				logistics_skill = 9
+				traits = {
+					organizer
+					logistics_wizard
+					thorough_planner
+					panzer_leader
+					panzer_expert
+					cavalry_leader
+					trait_engineer
+					fortress_buster
+					aggressive_assaulter
+					offensive_doctrine
+					infantry_leader
+					ambusher
+					organisational_leader
+					naval_invader
+					invader_ii
+					naval_liason
+					inspirational_leader
+					commando
+					skirmisher
+					paratrooper
+					camouflage_expert
+					trickster
+					expert_improviser
+					guerilla_fighter
+					skilled_staffer
+					expert_delegator
+					desert_fox
+					swamp_fox
+					hill_fighter
+					trait_mountaineer
+					urban_assault_specialist
+					ranger
+					jungle_rat
+					winter_specialist
+					adaptable
+					winter_expert
 				}
 			}
 		}
