@@ -198,6 +198,7 @@ focus_tree = {
 				ideology = despotism
 				traits = {
 					world_is_mine_neutrality
+					power_of_sing
 				}
 			}
 		}
@@ -233,6 +234,7 @@ focus_tree = {
 				ideology = conservatism
 				traits = {
 					world_is_mine_democratic
+					power_of_sing
 				}
 			}
 		}
@@ -268,6 +270,7 @@ focus_tree = {
 				ideology = nazism
 				traits = {
 					world_is_mine_fascism
+					power_of_sing
 				}
 			}
 		}
@@ -303,6 +306,7 @@ focus_tree = {
 				ideology = marxism
 				traits = {
 					world_is_mine_communism
+					power_of_sing
 				}
 			}
 		}

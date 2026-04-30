@@ -4,6 +4,6 @@ spriteTypes = {
     spriteType = {
         name = "GFX_portrait_miku"
         # 这里的路径必须指向你 .dds 文件的真实位置
-        texturefile = "gfx/leaders/GFX_portrait_miku.dds" 
+        textureFile = "gfx/leaders/GFX_portrait_miku.dds" 
     }
 }
