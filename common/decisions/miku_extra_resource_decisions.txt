@@ -5,7 +5,6 @@ miku_extra_resource_category = {
 		desc = miku_extra_resource_desc
 		state_target = any_owned_state
 		available = {
-			is_ai = no
 			has_country_flag = miku_extra_resource_unlocked
 		}
 		target_trigger = {
@@ -55,7 +54,15 @@ miku_extra_resource_category = {
 			}
 		}
 		ai_will_do = {
-			base = 0
+			base = 15
+			modifier = {
+				factor = 2
+				has_political_power > 200 
+			}
+			modifier = {
+				factor = 4
+				has_war = yes
+			}
 		}
 	}
 }

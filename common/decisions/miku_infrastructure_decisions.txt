@@ -7,7 +7,6 @@ miku_infrastructure_category = {
 		state_target = any_owned_state		# 只显示你拥有的地块（推荐）
 		# state_target = yes               # 如果想显示所有地块（包括占领的），可改成这个
 		available = {
-			is_ai = no
 			num_of_civilian_factories_available_for_projects > 2
 		}
 		target_trigger = {
@@ -30,6 +29,13 @@ miku_infrastructure_category = {
 					level = 1
 					instant_build = yes					# 立即完成，不进入建造队列
 				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_political_power > 150
 			}
 		}
 	}
