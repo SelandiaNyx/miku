@@ -4,8 +4,8 @@ leader_traits = {
 		stability_factor = 0.1
 		stability_weekly = 0.01
 		war_support_weekly = 0.01
-		neutrality_drift = 0.01
-		political_power_gain = 0.5
+		neutrality_drift = 0.1
+		political_power_gain = 1
 		local_resources_factor = 0.2
 		production_lack_of_resource_penalty_factor = -0.2
 	}
@@ -14,8 +14,8 @@ leader_traits = {
 		stability_factor = 0.1
 		stability_weekly = 0.01
 		war_support_weekly = 0.01
-		democratic_drift = 0.01
-		political_power_gain = 0.5
+		democratic_drift = 0.1
+		political_power_gain = 1
 		local_resources_factor = 0.2
 		production_lack_of_resource_penalty_factor = -0.2
 	}
@@ -24,8 +24,8 @@ leader_traits = {
 		stability_factor = 0.1
 		stability_weekly = 0.01
 		war_support_weekly = 0.01
-		fascism_drift = 0.01
-		political_power_gain = 0.5
+		fascism_drift = 0.1
+		political_power_gain = 1
 		local_resources_factor = 0.2
 		production_lack_of_resource_penalty_factor = -0.2
 	}
@@ -34,8 +34,8 @@ leader_traits = {
 		stability_factor = 0.1
 		stability_weekly = 0.01
 		war_support_weekly = 0.01
-		communism_drift = 0.01
-		political_power_gain = 0.5
+		communism_drift = 0.1
+		political_power_gain = 1
 		local_resources_factor = 0.2
 		production_lack_of_resource_penalty_factor = -0.2
 	}

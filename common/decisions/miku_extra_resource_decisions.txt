@@ -39,7 +39,7 @@ miku_extra_resource_category = {
 			}
 			add_resource = {
 				type = oil
-				amount = 4
+				amount = 10
 				state = FROM
 			}
 			add_resource = {

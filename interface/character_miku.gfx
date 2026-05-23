@@ -1,0 +1,13 @@
+spriteTypes = {
+	# 初音未来
+	spriteType = {
+		name = "GFX_character_miku"
+		texturefile = "gfx/leaders/character/character_miku.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_character_miku_small"
+		texturefile = "gfx/interface/ideas/character/character_miku.dds"
+		legacy_lazy_load = no
+	}
+}

@@ -1,0 +1,29 @@
+characters = {
+	# 初音未来
+	character_miku = {
+		name = character_miku
+		portraits = {
+			civilian = {
+				large = "GFX_character_miku"
+				small = "GFX_character_miku_small"
+			}
+			army = {
+				large = "GFX_character_miku"
+				small = "GFX_character_miku_small"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 9
+			defense_skill = 9
+			planning_skill = 9
+			logistics_skill = 9
+		}
+		country_leader = {
+			expire = "3939.3.9"
+			ideology = "nazism"
+			desc = ""
+			ID = ""
+		}
+	}
+}

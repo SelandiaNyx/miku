@@ -52,15 +52,43 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/mikufans_air.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_hyper_efficient_industry"
-		textureFile = "gfx/interface/ideas/hyper_efficient_industry.dds"
+		name = "GFX_idea_miku_industry_1"
+		textureFile = "gfx/interface/ideas/miku_industry.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_constellation_of_talents"
-		textureFile = "gfx/interface/ideas/constellation_of_talents.dds"
+		name = "GFX_idea_miku_industry_2"
+		textureFile = "gfx/interface/ideas/miku_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miku_industry_3"
+		textureFile = "gfx/interface/ideas/miku_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miku_industry_4"
+		textureFile = "gfx/interface/ideas/miku_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miku_research_1"
+		textureFile = "gfx/interface/ideas/miku_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miku_research_2"
+		textureFile = "gfx/interface/ideas/miku_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miku_research_3"
+		textureFile = "gfx/interface/ideas/miku_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miku_research_4"
+		textureFile = "gfx/interface/ideas/miku_research.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_miku_mikufans"
 		textureFile = "gfx/interface/ideas/miku_mikufans.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_miku_superman_1"
+		textureFile = "gfx/interface/ideas/miku_superman.dds"
 	}
 }

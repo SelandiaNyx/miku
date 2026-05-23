@@ -1,125 +1,75 @@
 # common\ideas\miku_focus_tree_ideas.txt
 ideas = {
 	country = {
-		industrial_restructuring_ongoing = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
+		miku_industry_1 = {
 			modifier = {
 				industrial_capacity_factory = -0.15
 				industrial_capacity_dockyard = -0.15
 				consumer_goods_factor = 0.15
 			}
 		}
-		crash_research = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
+		miku_research_1 = {
 			modifier = {
 				research_speed_factor = 0.1
 				consumer_goods_factor = 0.05
 			}
 		}
-		quality_education = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
+		miku_research_2 = {
 			modifier = {
 				research_speed_factor = 0.15
 				consumer_goods_factor = 0.1
 			}
 		}
-		standardized_production = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
+		miku_industry_2 = {
 			modifier = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 			}
 		}
-		eminent_talents = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
+		miku_research_3 = {
 			modifier = {
 				research_speed_factor = 0.2
 			}
 		}
-		constellation_of_talents = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
+		miku_research_4 = {
 			modifier = {
 				research_speed_factor = 0.3
 				consumer_goods_factor = -0.15
 			}
 		}
-		modernized_industry = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
+		miku_industry_3 = {
 			modifier = {
+				production_speed_buildings_factor = 0.2
 				industrial_capacity_factory = 0.2
 				industrial_capacity_dockyard = 0.2
 				consumer_goods_factor = -0.05
 			}
 		}
-		hyper_efficient_industry = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
+		miku_industry_4 = {
 			modifier = {
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_max_efficiency_factor = 0.25
+				production_speed_buildings_factor = 0.25
 				industrial_capacity_factory = 0.25
 				industrial_capacity_dockyard = 0.25
 				consumer_goods_factor = -0.15
 			}
 		}
 		miku_mikufans = {
-			allowed = {
-				always = yes
-			}
-			visible = {
-				always = yes
-			}
 			modifier = {
 				conscription = 0.05
 			}
 		}
 		mikufans_army_1 = {
-			picture = general_idea
 			modifier = {
 				army_org_factor = 0.1
+				equipment_capture = 0.1
 			}
 		}
 		mikufans_army_2 = {
-			picture = general_idea
 			modifier = {
 				army_org_factor = 0.15
+				equipment_capture = 0.15
 				supply_consumption_factor = -0.1
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
@@ -129,40 +79,38 @@ ideas = {
 			}
 		}
 		mikufans_army_3= {
-			picture = general_idea
 			modifier = {
-				army_org_factor = 0.15
-				supply_consumption_factor = -0.1
-				army_attack_factor = 0.1
-				army_defence_factor = 0.1
-				breakthrough_factor = 0.1
-				mechanized_attack_factor = 0.1
-				mechanized_defence_factor = 0.1
-				experience_gain_army = 0.1
+				army_org_factor = 0.2
+				equipment_capture = 0.2
+				supply_consumption_factor = -0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				breakthrough_factor = 0.15
+				mechanized_attack_factor = 0.15
+				mechanized_defence_factor = 0.15
+				experience_gain_army = 0.25
 			}
 		}
 		mikufans_army_4 = {
-			picture = general_idea
 			modifier = {
-				army_org_factor = 0.2
-				supply_consumption_factor = -0.1
-				army_attack_factor = 0.1
-				army_defence_factor = 0.1
-				breakthrough_factor = 0.1
-				mechanized_attack_factor = 0.1
-				mechanized_defence_factor = 0.1
-				experience_gain_army = 0.1
+				army_org_factor = 0.25
+				equipment_capture = 0.25
+				supply_consumption_factor = -0.2
+				army_attack_factor = 0.2
+				army_defence_factor = 0.2
+				breakthrough_factor = 0.2
+				mechanized_attack_factor = 0.2
+				mechanized_defence_factor = 0.
+				experience_gain_army = 0.5
 				land_night_attack = 0.2
 			}
 		}
 		mikufans_navy_1 = {
-			picture = general_idea
 			modifier = {
 				naval_speed_factor = 0.1
 			}
 		}
 		mikufans_navy_2 = {
-			picture = general_idea
 			modifier = {
 				naval_speed_factor = 0.15
 				navy_visibility = -0.1
@@ -176,44 +124,40 @@ ideas = {
 			}
 		}
 		mikufans_navy_3 = {
-			picture = general_idea
 			modifier = {
 				naval_speed_factor = 0.15
-				navy_visibility = -0.1
-				navy_capital_ship_attack_factor = 0.1
-				navy_capital_ship_defence_factor = 0.1
-				navy_carrier_air_attack_factor = 0.1
-				navy_screen_attack_factor = 0.1
-				navy_screen_defence_factor = 0.1
-				navy_submarine_attack_factor = 0.1
-				navy_submarine_defence_factor = 0.1
-				experience_gain_navy = 0.1
+				navy_visibility = -0.15
+				navy_capital_ship_attack_factor = 0.15
+				navy_capital_ship_defence_factor = 0.15
+				navy_carrier_air_attack_factor = 0.15
+				navy_screen_attack_factor = 0.15
+				navy_screen_defence_factor = 0.15
+				navy_submarine_attack_factor = 0.15
+				navy_submarine_defence_factor = 0.15
+				experience_gain_navy = 0.25
 			}
 		}
 		mikufans_navy_4 = {
-			picture = general_idea
 			modifier = {
 				naval_speed_factor = 0.2
-				navy_visibility = -0.1
-				navy_capital_ship_attack_factor = 0.1
-				navy_capital_ship_defence_factor = 0.1
-				navy_carrier_air_attack_factor = 0.1
-				navy_screen_attack_factor = 0.1
-				navy_screen_defence_factor = 0.1
-				navy_submarine_attack_factor = 0.1
-				navy_submarine_defence_factor = 0.1
-				experience_gain_navy = 0.1
+				navy_visibility = -0.2
+				navy_capital_ship_attack_factor = 0.2
+				navy_capital_ship_defence_factor = 0.2
+				navy_carrier_air_attack_factor = 0.2
+				navy_screen_attack_factor = 0.2
+				navy_screen_defence_factor = 0.2
+				navy_submarine_attack_factor = 0.2
+				navy_submarine_defence_factor = 0.2
+				experience_gain_navy = 0.5
 				naval_night_attack = 0.2
 			}
 		}
 		mikufans_air_1 = {
-			picture = general_idea
 			modifier = {
 				air_attack_factor = 0.1
 			}
 		}
 		mikufans_air_2 = {
-			picture = general_idea
 			modifier = {
 				air_attack_factor = 0.15
 				air_accidents_factor = -0.1
@@ -222,24 +166,31 @@ ideas = {
 			}
 		}
 		mikufans_air_3 = {
-			picture = general_idea
 			modifier = {
-				air_attack_factor = 0.15
-				air_accidents_factor = -0.1
-				air_ace_bonuses_factor = 0.1
-				air_range_factor = 0.1
-				experience_gain_air = 0.1
+				air_attack_factor = 0.2
+				air_accidents_factor = -0.15
+				air_ace_bonuses_factor = 0.15
+				air_range_factor = 0.15
+				experience_gain_air = 0.25
 			}
 		}
 		mikufans_air_4 = {
-			picture = general_idea
 			modifier = {
-				air_attack_factor = 0.2
-				air_accidents_factor = -0.1
-				air_ace_bonuses_factor = 0.1
-				air_range_factor = 0.1
-				experience_gain_air = 0.1
+				air_attack_factor = 0.25
+				air_accidents_factor = -0.2
+				air_ace_bonuses_factor = 0.2
+				air_range_factor = 0.2
+				experience_gain_air = 0.5
 				air_night_penalty = -0.2
+			}
+		}
+		miku_superman_1 = {
+			modifier = {
+				army_speed_factor = 0.1
+				planning_speed = 0.1
+				max_planning = 0.1
+				land_reinforce_rate = 0.1
+				org_loss_when_moving = -0.1
 			}
 		}
 	}

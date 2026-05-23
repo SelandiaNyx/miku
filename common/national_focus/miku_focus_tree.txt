@@ -23,12 +23,12 @@ focus_tree = {
 		continue_if_invalid = no
 		cancel_if_invalid = yes
 		completion_reward = {
-			add_ideas = industrial_restructuring_ongoing
+			add_ideas = miku_industry_1
 		}
 	}
 	focus = {
 		id = miku_focus_military_1
-		x = 28
+		x = 31
 		y = 1
 		cost = 5
 		continue_if_invalid = no
@@ -79,7 +79,7 @@ focus_tree = {
 			focus = miku_focus_industry_1
 		}
 		completion_reward = {
-			add_ideas = crash_research
+			add_ideas = miku_research_1
 		}
 	}
 	focus = {
@@ -112,7 +112,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 4
+					amount = 10
 				}
 				add_resource = {
 					type = rubber
@@ -141,7 +141,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_2_2
-		x = 29
+		x = 31
 		y = 2
 		cost = 10
 		continue_if_invalid = no
@@ -155,7 +155,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_2_3
-		x = 35
+		x = 39
 		y = 2
 		cost = 10
 		continue_if_invalid = no
@@ -437,7 +437,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = miku_support_bonus
 				bonus = 1
-				uses = 2
+				uses = 4
 				category = support_tech
 			}
 		}
@@ -456,7 +456,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = miku_artillery_bonus
 				bonus = 1
-				uses = 2
+				uses = 4
 				category = artillery
 			}
 		}
@@ -475,14 +475,14 @@ focus_tree = {
 			add_tech_bonus = {
 				name = miku_armor_bonus
 				bonus = 1
-				uses = 2
+				uses = 4
 				category = armor
 			}
 		}
 	}
 	focus = {
 		id = miku_focus_military_3_3_1
-		x = 33
+		x = 37
 		y = 3
 		cost = 5
 		continue_if_invalid = no
@@ -501,7 +501,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_3_3_2
-		x = 35
+		x = 39
 		y = 3
 		cost = 5
 		continue_if_invalid = no
@@ -520,7 +520,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_3_3_3
-		x = 37
+		x = 41
 		y = 3
 		cost = 5
 		continue_if_invalid = no
@@ -609,8 +609,8 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			swap_ideas = {
-				remove_idea = crash_research
-				add_idea = quality_education
+				remove_idea = miku_research_1
+				add_idea = miku_research_2
 			}
 		}
 	}
@@ -637,7 +637,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_4_2
-		x = 29
+		x = 31
 		y = 4
 		cost = 10
 		continue_if_invalid = no
@@ -646,6 +646,8 @@ focus_tree = {
 			focus = miku_focus_military_3_2_1
 			focus = miku_focus_military_3_2_2
 			focus = miku_focus_military_3_2_3
+			focus = miku_focus_military_3_2_4
+			focus = miku_focus_military_3_2_5
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -656,7 +658,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_4_3
-		x = 35
+		x = 39
 		y = 4
 		cost = 10
 		continue_if_invalid = no
@@ -685,8 +687,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = industrial_restructuring_ongoing
-				add_idea = standardized_production
+				remove_idea = miku_industry_1
+				add_idea = miku_industry_2
 			}
 		}
 	}
@@ -709,7 +711,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_5_2
-		x = 29
+		x = 31
 		y = 5
 		cost = 10
 		continue_if_invalid = no
@@ -726,7 +728,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_5_3
-		x = 35
+		x = 39
 		y = 5
 		cost = 10
 		continue_if_invalid = no
@@ -758,7 +760,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_military_6
-		x = 28
+		x = 31
 		y = 6
 		cost = 5
 		continue_if_invalid = no
@@ -800,8 +802,8 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			swap_ideas = {
-				remove_idea = quality_education
-				add_idea = eminent_talents
+				remove_idea = miku_research_2
+				add_idea = miku_research_3
 			}
 		}
 	}
@@ -817,8 +819,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = standardized_production
-				add_idea = modernized_industry
+				remove_idea = miku_industry_2
+				add_idea = miku_industry_3
 			}
 		}
 	}
@@ -835,8 +837,8 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			swap_ideas = {
-				remove_idea = eminent_talents
-				add_idea = constellation_of_talents
+				remove_idea = miku_research_3
+				add_idea = miku_research_4
 			}
 		}
 	}
@@ -852,8 +854,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = modernized_industry
-				add_idea = hyper_efficient_industry
+				remove_idea = miku_industry_3
+				add_idea = miku_industry_4
 			}
 		}
 	}
@@ -873,6 +875,184 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = miku_extra_resource_unlocked
 			custom_effect_tooltip = miku_extra_resource_unlocked_tt
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_2_4
+		x = 33
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_infantry_weapons_bonus
+				bonus = 1
+				uses = 4
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_3_2_5
+		x = 35
+		y = 3
+		cost = 5
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_2_2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = miku_motorized_equipment_bouns
+				bonus = 1
+				uses = 4
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_5_1
+		x = 3
+		y = 5
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_4_1
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = "工业宪章"
+		}
+	}
+	focus = {
+		id = miku_focus_political_5_2
+		x = 5
+		y = 5
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_4_2
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					ENG = {
+						exists = yes
+					}
+					ENG = {
+						is_in_faction = yes
+					}
+				}
+				ENG = {
+					add_to_faction = ROOT
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_5_3
+		x = 7
+		y = 5
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_4_3
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					GER = {
+						exists = yes
+					}
+					GER = {
+						is_in_faction = yes
+					}
+				}
+				GER = {
+					add_to_faction = ROOT
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_5_4
+		x = 9
+		y = 5
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_4_4
+		}
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					SOV = {
+						exists = yes
+					}
+					SOV = {
+						is_in_faction = yes
+					}
+				}
+				SOV = {
+					add_to_faction = ROOT
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_6
+		x = 6
+		y = 6
+		cost = 10
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		# 使用多个单独的prerequisite块，意味着只要满足其中一个即可（OR 逻辑）
+		prerequisite = {
+			focus = miku_focus_political_5_1
+		}
+		prerequisite = {
+			focus = miku_focus_political_5_2
+		}
+		prerequisite = {
+			focus = miku_focus_political_5_3
+		}
+		prerequisite = {
+			focus = miku_focus_political_5_4
+		}
+		completion_reward = {
+			add_ideas = miku_superman_1
+			add_experience = {
+				type = army_experience
+				value = 20
+			}
+			add_experience = {
+				type = navy_experience
+				value = 20
+			}
+			add_experience = {
+				type = air_experience
+				value = 20
+			}
 		}
 	}
 }
