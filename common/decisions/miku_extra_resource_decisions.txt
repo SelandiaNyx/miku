@@ -14,8 +14,9 @@ miku_extra_resource_category = {
 			}
 		}
 		cost = 50
-		fire_only_once = yes
-		days_remove = 0
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 180
 		complete_effect = {
 			add_resource = {
 				type = steel
@@ -44,7 +45,7 @@ miku_extra_resource_category = {
 			}
 			add_resource = {
 				type = rubber
-				amount = 4
+				amount = 8
 				state = FROM
 			}
 			add_resource = {
@@ -57,7 +58,7 @@ miku_extra_resource_category = {
 			base = 15
 			modifier = {
 				factor = 2
-				has_political_power > 200 
+				has_political_power > 200
 			}
 			modifier = {
 				factor = 4

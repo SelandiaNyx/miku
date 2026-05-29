@@ -41,6 +41,7 @@ leader_traits = {
 	}
 	power_of_sing  =  {
 		random = no
+		resistance_target = -0.3
 		compliance_gain = 0.01
 		weekly_manpower = 3939
 		non_core_manpower = 0.1
