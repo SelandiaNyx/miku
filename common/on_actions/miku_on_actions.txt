@@ -1,0 +1,51 @@
+# common/on_actions/miku_on_actions.txt
+on_actions = {
+	# 中立线
+	# on_daily 会在每天开始时，对游戏里的【每一个国家】分别执行一次
+	# 此时的 ROOT 和 THIS 都是当前正在被结算的国家
+	on_daily = {
+		effect = {
+			# 直接为当前国家计算它自己的“工厂3倍值”并存入变量
+			# 这样宗主国在决议里直接调用这个变量即可
+			set_variable = {
+				miku_annex_threshold_var = num_of_factories
+			}
+			multiply_variable = {
+				miku_annex_threshold_var = 3
+			}
+		}
+	}
+	# 民主线
+	# 每隔五天检查一次（性能均衡）
+	on_weekly = {
+		effect = {
+			every_country = {
+				limit = {
+					# 只有解锁了该国策的国家（或其盟友）才更新
+					has_dynamic_modifier = {
+						modifier = miku_ally_synergy_modifier
+					}
+				}
+				update_miku_ally_synergy_effect = yes
+			}
+		}
+	}
+	# 当有国家加入阵营时，尝试给它也挂上这个 buff
+	on_join_faction = {
+		effect = {
+			if = {
+				limit = {
+					any_other_country = {
+						is_in_faction_with = ROOT
+						has_dynamic_modifier = {
+							modifier = miku_ally_synergy_modifier
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = miku_ally_synergy_modifier
+				}
+			}
+		}
+	}
+}

@@ -1,10 +1,10 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_miku_focus_political_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -22,7 +22,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -43,10 +43,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_2"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_2.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_2.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_2.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -64,7 +64,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_2.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -85,10 +85,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_branch_fascism_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_branch_fascism_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_branch_fascism_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_branch_fascism_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_branch_fascism_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -106,7 +106,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_branch_fascism_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_branch_fascism_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -127,10 +127,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_4_3"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_4_3.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_4_3.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_4_3.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_4_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -148,7 +148,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_4_3.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_4_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -169,10 +169,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_5_3"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_5_3.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_5_3.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_5_3.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_5_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -190,7 +190,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_5_3.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_5_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -211,10 +211,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_6"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_6.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_6.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_6.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_6.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -232,7 +232,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_political_6.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_political_6.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -253,10 +253,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -274,7 +274,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -295,10 +295,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_2_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -316,7 +316,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -337,10 +337,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_2_2"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_2.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_2.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_2.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -358,7 +358,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_2.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -379,10 +379,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_2_3"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_3.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_3.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_3.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -400,7 +400,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_3.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -421,10 +421,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_3"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_3.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_3.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_3.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -442,7 +442,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_3.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -463,10 +463,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_4"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_4.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_4.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_4.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_4.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -484,7 +484,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_4.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_4.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -505,10 +505,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_5"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_5.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_5.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_5.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_5.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -526,7 +526,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_5.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_5.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -547,10 +547,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_6"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_6.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_6.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_6.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_6.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -568,7 +568,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_6.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_6.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -589,10 +589,10 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_7_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_7_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_7_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_7_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_7_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -610,7 +610,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\miku_focus_industry_7_1.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/miku_focus_industry_7_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no

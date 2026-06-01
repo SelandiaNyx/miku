@@ -1,7 +1,7 @@
-version="1.4"
+version="1.5"
 tags={
 	"Utilities"
 }
 name="初音未来"
-supported_version="1.*"
+supported_version="1.18.2.0"
 remote_file_id="3707210439"

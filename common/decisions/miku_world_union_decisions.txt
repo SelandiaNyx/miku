@@ -1,0 +1,124 @@
+# common\decisions\miku_world_union_decisions.txt
+miku_world_union_category = {
+	##################################################
+	# 1. 深度整合
+	##################################################
+	miku_world_union_puppet = {
+		icon = generic_political_pressure
+		cost = 75
+		days_remove = 7
+		target_trigger = {
+			is_in_faction_with = ROOT
+			NOT = {
+				tag = ROOT
+			}
+			is_subject = no
+			# 基础好感检查
+			has_opinion = {
+				target = ROOT
+				value > 75
+			}
+		}
+		available = {
+			has_government = neutrality
+			has_country_flag = miku_world_union_unlocked
+		}
+		complete_effect = {
+			FROM = {
+				set_autonomy = {
+					target = ROOT
+					autonomy_state = autonomy_integrated_puppet
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	##################################################
+	# 2. 全面统一 (使用变量对比：我国工厂 > 傀儡工厂 * 3)
+	##################################################
+	miku_world_union_annex = {
+		icon = generic_major_war
+		cost = 75
+		days_remove = 14
+		target_trigger = {
+			is_subject_of = ROOT
+			has_autonomy_state = autonomy_integrated_puppet
+		}
+		available = {
+			has_country_flag = miku_world_union_unlocked
+			has_government = neutrality
+			# 核心逻辑：检查变量
+			# 我们在后台计算好 root_factory_score 和 from_factory_score
+			custom_trigger_tooltip = {
+				tooltip = miku_annex_factory_check_tt
+				check_variable = {
+					num_of_factories > FROM:miku_annex_threshold_var
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				save_event_target_as = miku_annex_target
+			}
+			annex_country = {
+				target = FROM
+				transfer_troops = yes
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = event_target:miku_annex_target
+				}
+				add_compliance = 50
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_political_power > 300
+			}
+		}
+	}
+	##################################################
+	# 3. 核心化 (解决 CW247 作用域报错)
+	##################################################
+	miku_world_union_core = {
+		icon = generic_construct_civilian
+		state_target = yes
+		cost = 50
+		days_remove = 3
+		# 针对 CW247 的终极写法：在 target_trigger 里显式指定 FROM 作用域
+		target_trigger = {
+			FROM = {
+				is_controlled_by = ROOT
+				NOT = {
+					is_core_of = ROOT
+				}
+				compliance > 0.9
+			}
+		}
+		available = {
+			has_government = neutrality
+			has_country_flag = miku_world_union_unlocked
+		}
+		complete_effect = {
+			# 效果也要写在 FROM 里
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_political_power > 200
+			}
+		}
+	}
+}

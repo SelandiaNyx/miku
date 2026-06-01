@@ -1,0 +1,19 @@
+update_miku_ally_synergy_effect = {
+	# 只有民主政体且在阵营中才生效，否则清零
+	if = {
+		limit = {
+			has_government = democratic
+			is_in_faction = yes
+		}
+		# 计算阵营成员数 (faction_size 包括自己)
+		set_temp_variable = { temp_ally_count = faction_size }
+		subtract_from_temp_variable = { temp_ally_count = 1 } # 减去自己
+		
+		# 将数量转为百分比 (例如 1个盟友 = 0.01 = 1%)
+		set_variable = { miku_ally_count_variable = temp_ally_count }
+		multiply_variable = { miku_ally_count_variable = 0.01 }
+	}
+	else = {
+		set_variable = { miku_ally_count_variable = 0 }
+	}
+}

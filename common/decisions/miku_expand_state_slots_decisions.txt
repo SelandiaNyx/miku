@@ -1,25 +1,53 @@
 # common\decisions\miku_expand_state_slots_decisions.txt
 miku_expand_state_slots_category = {
-	miku_expand_state_slots = {
+	# 1. 【启动开关】只需点击一次，200PP，之后该决策永久隐藏
+	miku_expand_slots_automation_investment = {
 		icon = generic_decision
-		desc = miku_expand_state_slots_desc
-		state_target = any_owned_state
-		target_trigger = {
-			FROM = {
-				is_owned_and_controlled_by = ROOT
+		cost = 200
+		fire_only_once = yes
+		visible = {
+			has_country_flag = miku_expand_state_slots_unlocked
+			NOT = {
+				has_country_flag = miku_slots_automation_purchased
+			}
+		}
+		complete_effect = {
+			set_country_flag = miku_slots_automation_purchased
+			# 激活第一个工人循环
+			activate_decision = miku_expand_slots_worker_cycle
+			log = "[MikuTech] State Expansion Protocol Activated."
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	# 2. 【升级工人】30天循环一次，全自动，无需点击
+	miku_expand_slots_worker_cycle = {
+		icon = generic_operation
+		# 只有买了功能才在后台运行
+		visible = {
+			has_country_flag = miku_slots_automation_purchased
+		}
+		# 只有当地图上有还没满级的地块时，它才会跑进度条
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
 				NOT = {
 					has_state_category = megalopolis
 				}
 			}
 		}
-		available = {
-			has_country_flag = miku_expand_state_slots_unlocked
-		}
-		cost = 100
-		fire_only_once = no
-		days_remove = 30
+		days_remove = 30		# 升级周期
+		# 周期结束时的效果
 		remove_effect = {
-			FROM = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					NOT = {
+						has_state_category = megalopolis
+					}
+				}
+				# --- 升级逻辑开始 ---
 				if = {
 					limit = {
 						has_state_category = wasteland
@@ -80,21 +108,50 @@ miku_expand_state_slots_category = {
 					}
 					set_state_category = pastoral
 				}
+				# --- 升级逻辑结束 ---
+			}
+			# 【核心逻辑】结束后自动激活下一次，实现无限循环
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						NOT = {
+							has_state_category = megalopolis
+						}
+					}
+				}
+				activate_decision = miku_expand_slots_worker_cycle
+			}
+			else = {
+				# 如果领土全满了，启动后台扫描器，等待新领土
+				activate_decision = miku_expand_slots_scanner_cycle
 			}
 		}
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 2
-				has_political_power > 200
+	}
+	# 3. 【后台扫描器】当所有地块都满级时，它每10天扫描一次是否有新领土
+	miku_expand_slots_scanner_cycle = {
+		icon = generic_research_bonus
+		# 平时它是隐藏的，只有在需要扫描时才在后台运作
+		visible = {
+			always = no
+		}
+		days_remove = 10
+		remove_effect = {
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						NOT = {
+							has_state_category = megalopolis
+						}
+					}
+				}
+				# 发现新领土或未满级地块，唤醒工人
+				activate_decision = miku_expand_slots_worker_cycle
 			}
-			modifier = {
-				factor = 0.5
-				has_political_power < 100
-			}
-			modifier = {
-				factor = 0.1
-				has_war = yes
+			else = {
+				# 依然全满，继续下一次扫描
+				activate_decision = miku_expand_slots_scanner_cycle
 			}
 		}
 	}

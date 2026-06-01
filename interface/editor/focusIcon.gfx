@@ -1,62 +1,62 @@
 spriteTypes = {
 	SpriteType = {
 		name = "GFX_miku_focus_political_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_2"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_2.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_branch_fascism_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_branch_fascism_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_branch_fascism_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_4_3"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_4_3.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_4_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_5_3"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_5_3.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_5_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_political_6"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_political_6.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_political_6.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_2_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_2_2"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_2.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_2_3"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_2_3.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_2_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_3"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_3.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_3.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_4"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_4.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_4.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_5"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_5.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_5.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_6"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_6.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_6.dds"
 	}
 	SpriteType = {
 		name = "GFX_miku_focus_industry_7_1"
-		texturefile = "gfx\editor\interface\focusIcon\miku_focus_industry_7_1.dds"
+		texturefile = "gfx/editor/interface/focusIcon/miku_focus_industry_7_1.dds"
 	}
 }

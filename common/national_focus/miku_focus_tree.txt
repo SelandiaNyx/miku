@@ -6,7 +6,7 @@ focus_tree = {
 	default = no
 	focus = {
 		id = miku_focus_political_1
-		x = 6
+		x = 12
 		y = 1
 		cost = 5
 		icon = GFX_miku_focus_political_1
@@ -18,7 +18,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_1
-		x = 13
+		x = 46
 		y = 1
 		cost = 10
 		icon = GFX_miku_focus_industry_1
@@ -42,7 +42,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_2
-		x = 6
+		x = 12
 		y = 2
 		cost = 5
 		icon = GFX_miku_focus_political_2
@@ -57,7 +57,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_2_1
-		x = 11
+		x = 44
 		y = 2
 		cost = 5
 		icon = GFX_miku_focus_industry_2_1
@@ -75,7 +75,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_2_2
-		x = 13
+		x = 46
 		y = 2
 		cost = 5
 		icon = GFX_miku_focus_industry_2_2
@@ -90,7 +90,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_2_3
-		x = 15
+		x = 48
 		y = 2
 		cost = 5
 		icon = GFX_miku_focus_industry_2_3
@@ -179,7 +179,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_branch_neutrality_1
-		x = 3
+		x = 9
 		y = 3
 		cost = 10
 		icon = GFX_miku_focus_political_branch_neutrality_1
@@ -215,7 +215,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_branch_democratic_1
-		x = 5
+		x = 11
 		y = 3
 		cost = 10
 		icon = GFX_miku_focus_political_branch_democratic_1
@@ -251,7 +251,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_branch_fascism_1
-		x = 7
+		x = 13
 		y = 3
 		cost = 10
 		icon = GFX_miku_focus_political_branch_fascism_1
@@ -287,7 +287,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_branch_communism_1
-		x = 9
+		x = 15
 		y = 3
 		cost = 10
 		icon = GFX_miku_focus_political_branch_communism_1
@@ -323,7 +323,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_3
-		x = 13
+		x = 46
 		y = 3
 		cost = 5
 		icon = GFX_miku_focus_industry_3
@@ -565,7 +565,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_4_1
-		x = 3
+		x = 9
 		y = 4
 		cost = 5
 		icon = GFX_miku_focus_political_4_1
@@ -580,7 +580,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_4_2
-		x = 5
+		x = 11
 		y = 4
 		cost = 5
 		icon = GFX_miku_focus_political_4_2
@@ -596,7 +596,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_4_3
-		x = 7
+		x = 13
 		y = 4
 		cost = 5
 		icon = GFX_miku_focus_political_4_3
@@ -612,7 +612,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_4_4
-		x = 9
+		x = 15
 		y = 4
 		cost = 5
 		icon = GFX_miku_focus_political_4_4
@@ -628,7 +628,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_4
-		x = 13
+		x = 46
 		y = 4
 		cost = 10
 		icon = GFX_miku_focus_industry_4
@@ -711,7 +711,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_5
-		x = 13
+		x = 46
 		y = 5
 		cost = 10
 		icon = GFX_miku_focus_industry_5
@@ -783,7 +783,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_6
-		x = 13
+		x = 46
 		y = 6
 		cost = 5
 		icon = GFX_miku_focus_industry_6
@@ -831,7 +831,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_7_1
-		x = 12
+		x = 45
 		y = 7
 		cost = 10
 		icon = GFX_miku_focus_industry_7_1
@@ -850,7 +850,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_7_2
-		x = 14
+		x = 47
 		y = 7
 		cost = 10
 		icon = GFX_miku_focus_industry_7_2
@@ -868,7 +868,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_8_1
-		x = 12
+		x = 45
 		y = 8
 		cost = 10
 		icon = GFX_miku_focus_industry_8_1
@@ -887,7 +887,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_industry_8_2
-		x = 14
+		x = 47
 		y = 8
 		cost = 10
 		icon = GFX_miku_focus_industry_8_2
@@ -905,7 +905,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_extra_resource
-		x = 15
+		x = 48
 		y = 4
 		cost = 5
 		icon = GFX_miku_focus_extra_resource
@@ -964,7 +964,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_5_1
-		x = 3
+		x = 9
 		y = 5
 		cost = 10
 		icon = GFX_miku_focus_political_5_1
@@ -982,7 +982,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_5_2
-		x = 5
+		x = 11
 		y = 5
 		cost = 10
 		icon = GFX_miku_focus_political_5_2
@@ -1012,7 +1012,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_5_3
-		x = 7
+		x = 13
 		y = 5
 		cost = 10
 		icon = GFX_miku_focus_political_5_3
@@ -1042,7 +1042,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_5_4
-		x = 9
+		x = 15
 		y = 5
 		cost = 10
 		icon = GFX_miku_focus_political_5_4
@@ -1072,7 +1072,7 @@ focus_tree = {
 	}
 	focus = {
 		id = miku_focus_political_6
-		x = 6
+		x = 12
 		y = 6
 		cost = 10
 		icon = GFX_miku_focus_political_6
@@ -1089,6 +1089,126 @@ focus_tree = {
 			air_experience = 20
 			army_experience = 20
 			navy_experience = 20
+		}
+	}
+	focus = {
+		id = miku_focus_political_7_1
+		x = 9
+		y = 7
+		cost = 10
+		icon = GFX_miku_focus_political_7_1
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_5_1
+		}
+		prerequisite = {
+			focus = miku_focus_political_6
+		}
+		completion_reward = {
+			set_country_flag = miku_world_union_unlocked
+			custom_effect_tooltip = miku_world_union_unlocked_tt
+		}
+	}
+	focus = {
+		id = miku_focus_political_7_2
+		x = 11
+		y = 7
+		cost = 10
+		icon = GFX_miku_focus_political_7_2
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_5_2
+		}
+		prerequisite = {
+			focus = miku_focus_political_6
+		}
+		completion_reward = {
+			# 给自己添加动态修正
+			add_dynamic_modifier = {
+				modifier = miku_ally_synergy_modifier
+			}
+			# 给当前所有盟友也添加这个修正
+			every_other_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				add_dynamic_modifier = {
+					modifier = miku_ally_synergy_modifier
+				}
+			}
+			# 设置一个国家标记，以便新加入阵营的盟友也能获得
+			set_global_flag = miku_ally_synergy_unlocked
+			# 立即计算一次
+			update_miku_ally_synergy_effect = yes
+		}
+	}
+	focus = {
+		id = miku_focus_political_7_3
+		x = 13
+		y = 7
+		cost = 10
+		icon = GFX_miku_focus_political_7_3
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_6
+		}
+		prerequisite = {
+			focus = miku_focus_political_5_3
+		}
+		completion_reward = {
+			every_neighbor_country = {
+				ROOT = {
+					create_wargoal = {
+						target = PREV						# PREV 指向上一层作用域，即当前的这个邻国
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_political_7_4
+		x = 15
+		y = 7
+		cost = 10
+		icon = GFX_miku_focus_political_7_4
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_political_6
+		}
+		prerequisite = {
+			focus = miku_focus_political_5_4
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = miku_first_five_year_plan_modifier
+				days = 1825
+			}
+		}
+	}
+	focus = {
+		id = miku_focus_military_7
+		x = 31
+		y = 7
+		cost = 10
+		icon = GFX_miku_focus_military_7
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = miku_focus_military_6
+		}
+		prerequisite = {
+			focus = miku_focus_political_6
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = miku_superman_1
+				add_idea = miku_superman_2
+			}
 		}
 	}
 }

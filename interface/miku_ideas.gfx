@@ -91,4 +91,8 @@ spriteTypes = {
 		name = "GFX_idea_miku_superman_1"
 		textureFile = "gfx/interface/ideas/miku_superman.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_miku_superman_2"
+		textureFile = "gfx/interface/ideas/miku_superman.dds"
+	}
 }

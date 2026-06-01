@@ -7,5 +7,6 @@ miku_extra_resource_category = {
 	visible = {
 		has_country_flag = miku_extra_resource_unlocked
 	}
+	visible_when_empty = no
 	priority = 8
 }

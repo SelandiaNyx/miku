@@ -8,33 +8,10 @@ ideas = {
 				consumer_goods_factor = 0.15
 			}
 		}
-		miku_research_1 = {
-			modifier = {
-				research_speed_factor = 0.1
-				consumer_goods_factor = 0.05
-			}
-		}
-		miku_research_2 = {
-			modifier = {
-				research_speed_factor = 0.15
-				consumer_goods_factor = 0.1
-			}
-		}
 		miku_industry_2 = {
 			modifier = {
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
-			}
-		}
-		miku_research_3 = {
-			modifier = {
-				research_speed_factor = 0.2
-			}
-		}
-		miku_research_4 = {
-			modifier = {
-				research_speed_factor = 0.3
-				consumer_goods_factor = -0.15
 			}
 		}
 		miku_industry_3 = {
@@ -55,9 +32,33 @@ ideas = {
 				consumer_goods_factor = -0.15
 			}
 		}
+		miku_research_1 = {
+			modifier = {
+				research_speed_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		miku_research_2 = {
+			modifier = {
+				research_speed_factor = 0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		miku_research_3 = {
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		miku_research_4 = {
+			modifier = {
+				research_speed_factor = 0.3
+				consumer_goods_factor = -0.15
+			}
+		}
 		miku_mikufans = {
 			modifier = {
 				conscription = 0.05
+				supply_node_range = 0.2
 			}
 		}
 		mikufans_army_1 = {
@@ -76,9 +77,11 @@ ideas = {
 				breakthrough_factor = 0.1
 				mechanized_attack_factor = 0.1
 				mechanized_defence_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
 			}
 		}
-		mikufans_army_3= {
+		mikufans_army_3 = {
 			modifier = {
 				army_org_factor = 0.2
 				equipment_capture = 0.2
@@ -88,6 +91,8 @@ ideas = {
 				breakthrough_factor = 0.15
 				mechanized_attack_factor = 0.15
 				mechanized_defence_factor = 0.15
+				army_armor_attack_factor = 0.15
+				army_armor_defence_factor = 0.15
 				experience_gain_army = 0.25
 			}
 		}
@@ -101,6 +106,8 @@ ideas = {
 				breakthrough_factor = 0.2
 				mechanized_attack_factor = 0.2
 				mechanized_defence_factor = 0.2
+				army_armor_attack_factor = 0.2
+				army_armor_defence_factor = 0.2
 				experience_gain_army = 0.5
 				land_night_attack = 0.2
 			}
@@ -186,11 +193,29 @@ ideas = {
 		}
 		miku_superman_1 = {
 			modifier = {
+				army_strength_factor = 0.1
 				army_speed_factor = 0.1
 				planning_speed = 0.1
 				max_planning = 0.1
 				land_reinforce_rate = 0.1
 				org_loss_when_moving = -0.1
+			}
+		}
+		miku_superman_2 = {
+			modifier = {
+				army_strength_factor = 0.15
+				army_speed_factor = 0.15
+				planning_speed = 0.15
+				max_planning = 0.15
+				land_reinforce_rate = 0.15
+				org_loss_when_moving = -0.15
+			}
+		}
+		miku_first_five_year_plan_modifier = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.2
+				production_speed_buildings_factor = 0.2
 			}
 		}
 	}

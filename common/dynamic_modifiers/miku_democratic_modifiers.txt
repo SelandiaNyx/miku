@@ -1,0 +1,4 @@
+miku_ally_synergy_modifier = {
+	# 这里的变量名可以自定义，稍后会在脚本里给它赋值
+	industrial_capacity_factory = miku_ally_count_variable
+}

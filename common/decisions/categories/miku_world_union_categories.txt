@@ -1,0 +1,11 @@
+# common\decisions\categories\miku_world_union_categories.txt
+miku_world_union_category = {
+	icon = generic_decision
+	allowed = {
+		original_tag = ROOT
+	}
+	visible = {
+		has_country_flag = miku_world_union_unlocked
+	}
+	priority = 8
+}

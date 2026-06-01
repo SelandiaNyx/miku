@@ -1,69 +1,261 @@
 # common\decisions\miku_extra_resource_decisions.txt
 miku_extra_resource_category = {
-	miku_extra_resource = {
-		icon = generic_decision
-		desc = miku_extra_resource_desc
-		state_target = any_owned_state
-		available = {
+	miku_extra_resource_investment = {
+		icon = generic_operation
+		cost = 200
+		fire_only_once = yes
+		visible = {
 			has_country_flag = miku_extra_resource_unlocked
-		}
-		target_trigger = {
-			FROM = {
-				is_owned_and_controlled_by = ROOT
-				infrastructure = 5
+			NOT = {
+				has_country_flag = miku_resource_automation_active
 			}
 		}
-		cost = 50
-		fire_only_once = no
-		days_remove = 180
-		days_re_enable = 180
 		complete_effect = {
-			add_resource = {
-				type = steel
-				amount = 4
-				state = FROM
-			}
-			add_resource = {
-				type = aluminium
-				amount = 4
-				state = FROM
-			}
-			add_resource = {
-				type = tungsten
-				amount = 4
-				state = FROM
-			}
-			add_resource = {
-				type = chromium
-				amount = 4
-				state = FROM
-			}
-			add_resource = {
-				type = oil
-				amount = 10
-				state = FROM
-			}
-			add_resource = {
-				type = rubber
-				amount = 8
-				state = FROM
-			}
-			add_resource = {
-				type = coal
-				amount = 4
-				state = FROM
-			}
+			set_country_flag = miku_resource_automation_active
+			activate_decision = miku_extra_resource_auto_extraction
+			custom_effect_tooltip = miku_resource_investment_completed_tt
 		}
 		ai_will_do = {
-			base = 15
-			modifier = {
-				factor = 2
-				has_political_power > 200
+			base = 100
+		}
+	}
+	miku_extra_resource_auto_extraction = {
+		icon = generic_operation
+		allowed = {
+		}
+		visible = {
+			has_country_flag = miku_resource_automation_active
+		}
+		available = {
+			has_country_flag = miku_resource_automation_active
+		}
+		days_remove = 10
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					infrastructure > 0
+				}
+				random_list = {
+					14 = {
+						# 抽中钢铁的概率
+						random_list = {
+							40 = {
+								add_resource = {
+									type = steel
+									amount = 20
+								}
+							}
+							# 40% 概率给 20
+							30 = {
+								add_resource = {
+									type = steel
+									amount = 40
+								}
+							}
+							# 30% 概率给 40
+							20 = {
+								add_resource = {
+									type = steel
+									amount = 60
+								}
+							}
+							# 20% 概率给 60
+							10 = {
+								add_resource = {
+									type = steel
+									amount = 80
+								}
+							}
+							# 10% 概率给 80
+						}
+					}
+					14 = {
+						# 抽中铝的概率
+						random_list = {
+							40 = {
+								add_resource = {
+									type = aluminium
+									amount = 15
+								}
+							}
+							30 = {
+								add_resource = {
+									type = aluminium
+									amount = 30
+								}
+							}
+							20 = {
+								add_resource = {
+									type = aluminium
+									amount = 45
+								}
+							}
+							10 = {
+								add_resource = {
+									type = aluminium
+									amount = 60
+								}
+							}
+						}
+					}
+					14 = {
+						random_list = {
+							50 = {
+								add_resource = {
+									type = tungsten
+									amount = 5
+								}
+							}
+							30 = {
+								add_resource = {
+									type = tungsten
+									amount = 15
+								}
+							}
+							20 = {
+								add_resource = {
+									type = tungsten
+									amount = 25
+								}
+							}
+						}
+					}
+					14 = {
+						# 抽中铬的概率
+						random_list = {
+							40 = {
+								add_resource = {
+									type = chromium
+									amount = 5
+								}
+							}
+							30 = {
+								add_resource = {
+									type = chromium
+									amount = 10
+								}
+							}
+							20 = {
+								add_resource = {
+									type = chromium
+									amount = 15
+								}
+							}
+							10 = {
+								add_resource = {
+									type = chromium
+									amount = 25
+								}
+							}
+						}
+					}
+					14 = {
+						# 抽中石油的概率
+						random_list = {
+							40 = {
+								add_resource = {
+									type = oil
+									amount = 15
+								}
+							}
+							30 = {
+								add_resource = {
+									type = oil
+									amount = 30
+								}
+							}
+							20 = {
+								add_resource = {
+									type = oil
+									amount = 45
+								}
+							}
+							10 = {
+								add_resource = {
+									type = oil
+									amount = 60
+								}
+							}
+						}
+					}
+					14 = {
+						# 抽中橡胶的概率
+						random_list = {
+							40 = {
+								add_resource = {
+									type = rubber
+									amount = 10
+								}
+							}
+							30 = {
+								add_resource = {
+									type = rubber
+									amount = 20
+								}
+							}
+							20 = {
+								add_resource = {
+									type = rubber
+									amount = 30
+								}
+							}
+							10 = {
+								add_resource = {
+									type = rubber
+									amount = 40
+								}
+							}
+						}
+					}
+					14 = {
+						random_list = {
+							40 = {
+								add_resource = {
+									type = coal
+									amount = 20
+								}
+							}
+							30 = {
+								add_resource = {
+									type = coal
+									amount = 40
+								}
+							}
+							20 = {
+								add_resource = {
+									type = coal
+									amount = 60
+								}
+							}
+							10 = {
+								add_resource = {
+									type = coal
+									amount = 80
+								}
+							}
+						}
+					}
+				}
 			}
-			modifier = {
-				factor = 4
-				has_war = yes
-			}
+			set_country_flag = miku_extra_resource_auto_extraction_completed
+			clr_country_flag = miku_resource_automation_active
+			activate_decision = miku_extra_resource_auto_prepairation
+		}
+	}
+	miku_extra_resource_auto_prepairation = {
+		icon = generic_operation
+		allowed = {
+		}
+		visible = {
+			has_country_flag = miku_extra_resource_auto_extraction_completed
+		}
+		available = {
+			has_country_flag = miku_extra_resource_auto_extraction_completed
+		}
+		complete_effect = {
+			set_country_flag = miku_resource_automation_active
+			clr_country_flag = miku_extra_resource_auto_extraction_completed
+			activate_decision = miku_extra_resource_auto_extraction
 		}
 	}
 }
