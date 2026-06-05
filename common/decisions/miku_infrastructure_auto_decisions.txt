@@ -1,0 +1,104 @@
+# common\decisions\miku_infrastructure_manual_upgrade_decisions.txt
+miku_infrastructure_manual_upgrade_category = {
+	# 原始手动升级决议（保留不动）
+	miku_infrastructure_manual_upgrade = {
+		icon = generic_decision
+		desc = miku_infrastructure_manual_upgrade_desc
+		state_target = any_owned_state
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_by = ROOT
+				infrastructure < 5
+			}
+		}
+		cost = 50
+		fire_only_once = no
+		days_remove = 30
+		modifier = {
+			civilian_factory_use = 1
+		}
+		remove_effect = {
+			FROM = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 2
+				has_political_power > 200
+			}
+		}
+	}
+	##################################################
+	# 自动化基础设施升级系统
+	##################################################
+	# 1. 启动自动化（只需点击一次）
+	miku_infrastructure_manual_upgrade_auto_start = {
+		icon = generic_decision
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			has_country_flag = miku_infrastructure_manual_upgrade_unlocked
+			NOT = {
+				has_country_flag = miku_infrastructure_manual_upgrade_auto_active
+			}
+		}
+		complete_effect = {
+			set_country_flag = miku_infrastructure_manual_upgrade_auto_active
+			activate_decision = miku_infrastructure_manual_upgrade_auto_upgrade
+			log = "[MikuTech] Infrastructure Auto-Upgrades Activated."
+		}
+		ai_will_do = {
+			base = 100
+		}
+	}
+	# 2. 自动化工人循环，每60天升级一个地块
+	miku_infrastructure_manual_upgrade_auto_upgrade = {
+		icon = generic_operation
+		visible = {
+			always = no
+		}		# 后台运行
+		available = {
+			has_country_flag = miku_infrastructure_manual_upgrade_auto_active
+			num_of_civilian_factories_available_for_projects >= 2
+			any_owned_state = {
+				infrastructure < 5
+			}
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 1
+		}		# 占用1个民用工厂
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			# 周期结束后继续下一次循环，如果条件满足
+			if = {
+				limit = {
+					any_owned_state = {
+						infrastructure < 5
+					}
+					num_of_civilian_factories_available_for_projects >= 2
+				}
+				activate_decision = miku_infrastructure_manual_upgrade_auto_upgrade
+			}
+		}
+	}
+}

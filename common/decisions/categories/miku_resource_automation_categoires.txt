@@ -1,5 +1,5 @@
-# common\decisions\categories\miku_extra_resource_categoires.txt
-miku_extra_resource_category = {
+# common\decisions\categories\miku_resource_automation_categoires.txt
+miku_resource_automation_category = {
 	icon = generic_decision
 	allowed = {
 		original_tag = ROOT

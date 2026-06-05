@@ -1,6 +1,6 @@
-# common\decisions\miku_extra_resource_decisions.txt
-miku_extra_resource_category = {
-	miku_extra_resource_investment = {
+# common\decisions\miku_resource_automation_decisions.txt
+miku_resource_automation_category = {
+	miku_resource_automation_start = {
 		icon = generic_operation
 		cost = 200
 		fire_only_once = yes
@@ -12,14 +12,14 @@ miku_extra_resource_category = {
 		}
 		complete_effect = {
 			set_country_flag = miku_resource_automation_active
-			activate_decision = miku_extra_resource_auto_extraction
+			activate_decision = miku_resource_auto_extract
 			custom_effect_tooltip = miku_resource_investment_completed_tt
 		}
 		ai_will_do = {
 			base = 100
 		}
 	}
-	miku_extra_resource_auto_extraction = {
+	miku_resource_auto_extract = {
 		icon = generic_operation
 		allowed = {
 		}
@@ -237,25 +237,25 @@ miku_extra_resource_category = {
 					}
 				}
 			}
-			set_country_flag = miku_extra_resource_auto_extraction_completed
+			set_country_flag = miku_resource_auto_extract_completed
 			clr_country_flag = miku_resource_automation_active
-			activate_decision = miku_extra_resource_auto_prepairation
+			activate_decision = miku_resource_auto_prepare
 		}
 	}
-	miku_extra_resource_auto_prepairation = {
+	miku_resource_auto_prepare = {
 		icon = generic_operation
 		allowed = {
 		}
 		visible = {
-			has_country_flag = miku_extra_resource_auto_extraction_completed
+			has_country_flag = miku_resource_auto_extract_completed
 		}
 		available = {
-			has_country_flag = miku_extra_resource_auto_extraction_completed
+			has_country_flag = miku_resource_auto_extract_completed
 		}
 		complete_effect = {
 			set_country_flag = miku_resource_automation_active
-			clr_country_flag = miku_extra_resource_auto_extraction_completed
-			activate_decision = miku_extra_resource_auto_extraction
+			clr_country_flag = miku_resource_auto_extract_completed
+			activate_decision = miku_resource_auto_extract
 		}
 	}
 }

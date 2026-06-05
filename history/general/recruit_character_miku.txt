@@ -1,0 +1,4 @@
+# history/general/recruit_character_miku.txt
+recruit_character = {
+	character = character_miku
+}

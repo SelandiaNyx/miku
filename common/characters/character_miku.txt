@@ -1,18 +1,33 @@
+# common\characters\character_miku.txt
 characters = {
 	# 初音未来
 	character_miku = {
-		name = character_miku
+		name = character_miku		# 本地化键名，用于在语言包里翻译为“初音未来”
 		portraits = {
 			civilian = {
-				large = "GFX_character_miku"
+				large = "GFX_character_miku_large"
 				small = "GFX_character_miku_small"
 			}
 			army = {
-				large = "GFX_character_miku"
+				large = "GFX_character_miku_large"
 				small = "GFX_character_miku_small"
 			}
 		}
-		corps_commander = {
+		advisor = {
+			slot = political_advisor
+			traits = {
+				miku_political_trait
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = miku_theorist
+			ledger = military
+			traits = {
+				miku_military_trait
+			}
+		}
+		field_marshal = {
 			skill = 3
 			attack_skill = 9
 			defense_skill = 9
@@ -20,10 +35,32 @@ characters = {
 			logistics_skill = 9
 		}
 		country_leader = {
-			expire = "3939.3.9"
-			ideology = "nazism"
-			desc = ""
-			ID = ""
+			ideology = despotism
+			traits = {
+				world_is_mine_neutrality
+				power_of_sing
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			traits = {
+				world_is_mine_democratic
+				power_of_sing
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			traits = {
+				world_is_mine_fascism
+				power_of_sing
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			traits = {
+				world_is_mine_communism
+				power_of_sing
+			}
 		}
 	}
 }

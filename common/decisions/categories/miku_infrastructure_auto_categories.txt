@@ -1,5 +1,5 @@
-# common\decisions\categories\miku_infrastructure_categories.txt
-miku_infrastructure_category = {
+# common\decisions\categories\miku_infrastructure_auto_categories.txt
+miku_infrastructure_manual_upgrade_category = {
 	icon = generic_decision
 	allowed = {
 		original_tag = ROOT

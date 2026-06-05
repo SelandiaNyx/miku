@@ -1,9 +1,13 @@
 # interface\miku_portraits.gfx
 spriteTypes = {
-    # 定义头像的 GFX 键名
-    spriteType = {
-        name = "GFX_portrait_miku"
-        # 这里的路径必须指向你 .dds 文件的真实位置
-        textureFile = "gfx/leaders/GFX_portrait_miku.dds" 
-    }
+	# 大头像 (领袖、将领)
+	spriteType = {
+		name = "GFX_character_miku_large"
+		texturefile = "gfx/leaders/character/character_miku_large.dds"
+	}
+	# 小头像 (顾问、小图标)
+	spriteType = {
+		name = "GFX_character_miku_small"
+		texturefile = "gfx/leaders/character/character_miku_small.dds"
+	}
 }

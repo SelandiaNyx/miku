@@ -1,3 +1,4 @@
+# common\national_focus\miku_focus_tree.txt
 focus_tree = {
 	id = miku_focus_tree
 	country = {
@@ -38,6 +39,7 @@ focus_tree = {
 		cancel_if_invalid = yes
 		completion_reward = {
 			add_ideas = miku_mikufans
+			army_experience = 50
 		}
 	}
 	focus = {
@@ -53,6 +55,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.5
+			recruit_character = character_miku
 		}
 	}
 	focus = {
@@ -202,14 +205,9 @@ focus_tree = {
 				ruling_party = neutrality
 				elections_allowed = no
 			}
-			create_country_leader = {
-				name = VOC_miku
-				picture = GFX_portrait_miku
+			promote_character = {
+				character = character_miku
 				ideology = despotism
-				traits = {
-					world_is_mine_neutrality
-					power_of_sing
-				}
 			}
 		}
 	}
@@ -238,14 +236,9 @@ focus_tree = {
 				ruling_party = democratic
 				elections_allowed = no
 			}
-			create_country_leader = {
-				name = VOC_miku
-				picture = GFX_portrait_miku
+			promote_character = {
+				character = character_miku
 				ideology = conservatism
-				traits = {
-					world_is_mine_democratic
-					power_of_sing
-				}
 			}
 		}
 	}
@@ -274,14 +267,9 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			create_country_leader = {
-				name = VOC_miku
-				picture = GFX_portrait_miku
+			promote_character = {
+				character = character_miku
 				ideology = nazism
-				traits = {
-					world_is_mine_fascism
-					power_of_sing
-				}
 			}
 		}
 	}
@@ -310,14 +298,9 @@ focus_tree = {
 				ruling_party = communism
 				elections_allowed = no
 			}
-			create_country_leader = {
-				name = VOC_miku
-				picture = GFX_portrait_miku
+			promote_character = {
+				character = character_miku
 				ideology = marxism
-				traits = {
-					world_is_mine_communism
-					power_of_sing
-				}
 			}
 		}
 	}

@@ -43,8 +43,10 @@ leader_traits = {
 		local_resources_factor = 0.2
 		production_lack_of_resource_penalty_factor = -0.2
 	}
-	power_of_sing  =  {
+	power_of_sing = {
 		random = no
+		annex_cost_factor = -0.2
+		puppet_cost_factor = -0.2
 		resistance_target = -0.3
 		compliance_gain = 0.01
 		weekly_manpower = 3939
@@ -53,5 +55,29 @@ leader_traits = {
 		army_core_attack_factor = 0.2
 		army_core_defence_factor = 0.2
 		supply_combat_penalties_on_core_factor = -0.4
+		resistance_growth_on_our_occupied_states = 1
+		resistance_target_on_our_occupied_states = 1
+	}
+	miku_political_trait = {
+		random = no
+		political_power_factor = 0.15
+		consumer_goods_factor = -0.15
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_arms_factory_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+	}
+	miku_military_trait = {
+		random = no
+		land_doctrine_cost_factor = -0.1
+		naval_doctrine_cost_factor = -0.1
+		air_doctrine_cost_factor = -0.1
+		land_mastery_gain_factor = 0.15
+		naval_mastery_gain_factor = 0.15
+		air_mastery_gain_factor = 0.15
+		experience_gain_army_factor = 0.15
+		experience_gain_navy_factor = 0.15
+		experience_gain_air_factor = 0.15
 	}
 }

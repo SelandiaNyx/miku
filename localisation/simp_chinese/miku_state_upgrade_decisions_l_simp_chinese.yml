@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+  miku_state_upgrade_activation: "启动地块开发自动化"
+  miku_state_upgrade_activation_desc: "建立全国地块开发体系，自动提升辖区发展等级。"
+
+  miku_state_upgrade_worker: "地块开发作业"
+  miku_state_upgrade_worker_desc: "自动选择一个未达到最高等级的地区进行开发建设。"
+
+  miku_state_upgrade_scanner: "领土发展监测"
+  miku_state_upgrade_scanner_desc: "持续监测新获得领土及未完成开发的地区。"

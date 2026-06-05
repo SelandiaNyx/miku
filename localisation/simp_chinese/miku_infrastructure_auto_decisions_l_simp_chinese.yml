@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+  miku_infrastructure_manual_upgrade: "升级基础设施"
+  miku_infrastructure_manual_upgrade_desc: "集中资源改善指定地区的基础设施水平。"
+
+  miku_infrastructure_auto_start: "启动基础设施自动化"
+  miku_infrastructure_auto_start_desc: "建立全国基础设施建设体系，自动提升地区基础设施等级。"
+
+  miku_infrastructure_auto_upgrade: "基础设施建设工程"
+  miku_infrastructure_auto_upgrade_desc: "自动选择一个基础设施未达上限的地区进行建设。"

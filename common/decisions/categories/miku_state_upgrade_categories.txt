@@ -1,5 +1,5 @@
-# common\decisions\categories\miku_expand_state_slots_categories.txt
-miku_expand_state_slots_category = {
+# common\decisions\categories\miku_state_upgrade_categories.txt
+miku_state_upgrade_category = {
 	icon = generic_decision
 	allowed = {
 		original_tag = ROOT

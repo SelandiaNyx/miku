@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+  miku_resource_automation_start: "启动资源勘探自动化"
+  miku_resource_automation_start_desc: "建立自动化资源勘探与开采体系。"
+
+  miku_resource_auto_extract: "资源勘探与开采"
+  miku_resource_auto_extract_desc: "自动在全国范围内开展资源勘探与开发工作。"
+
+  miku_resource_auto_prepare: "资源开采准备"
+  miku_resource_auto_prepare_desc: "为下一轮资源勘探与开发工作进行准备。"
