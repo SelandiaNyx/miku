@@ -7,5 +7,7 @@ miku_state_upgrade_category = {
 	visible = {
 		has_country_flag = miku_expand_state_slots_unlocked
 	}
+	# 修正：当该分类内没有可见决策时，自动隐藏整个标题栏
+	visible_when_empty = no
 	priority = 8
 }

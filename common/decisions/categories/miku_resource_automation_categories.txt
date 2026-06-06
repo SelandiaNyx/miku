@@ -1,4 +1,4 @@
-# common\decisions\categories\miku_resource_automation_categoires.txt
+# common\decisions\categories\miku_resource_automation_categories.txt
 miku_resource_automation_category = {
 	icon = generic_decision
 	allowed = {

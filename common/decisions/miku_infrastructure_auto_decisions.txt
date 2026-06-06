@@ -1,44 +1,7 @@
 # common\decisions\miku_infrastructure_manual_upgrade_decisions.txt
 miku_infrastructure_manual_upgrade_category = {
-	# 原始手动升级决议（保留不动）
-	miku_infrastructure_manual_upgrade = {
-		icon = generic_decision
-		desc = miku_infrastructure_manual_upgrade_desc
-		state_target = any_owned_state
-		available = {
-			num_of_civilian_factories_available_for_projects > 2
-		}
-		target_trigger = {
-			FROM = {
-				is_owned_by = ROOT
-				infrastructure < 5
-			}
-		}
-		cost = 50
-		fire_only_once = no
-		days_remove = 30
-		modifier = {
-			civilian_factory_use = 1
-		}
-		remove_effect = {
-			FROM = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 2
-				has_political_power > 200
-			}
-		}
-	}
 	##################################################
-	# 自动化基础设施升级系统
+	# 自动化基础设施升级系统（纯全自动版）
 	##################################################
 	# 1. 启动自动化（只需点击一次）
 	miku_infrastructure_manual_upgrade_auto_start = {
@@ -46,13 +9,14 @@ miku_infrastructure_manual_upgrade_category = {
 		cost = 50
 		fire_only_once = yes
 		visible = {
-			has_country_flag = miku_infrastructure_manual_upgrade_unlocked
+			has_country_flag = miku_infrastructure_unlocked
 			NOT = {
 				has_country_flag = miku_infrastructure_manual_upgrade_auto_active
 			}
 		}
 		complete_effect = {
 			set_country_flag = miku_infrastructure_manual_upgrade_auto_active
+			# 统一逻辑：激活决策后直接触发工人，与资源和地块升级逻辑完全一致
 			activate_decision = miku_infrastructure_manual_upgrade_auto_upgrade
 			log = "[MikuTech] Infrastructure Auto-Upgrades Activated."
 		}
@@ -63,20 +27,24 @@ miku_infrastructure_manual_upgrade_category = {
 	# 2. 自动化工人循环，每60天升级一个地块
 	miku_infrastructure_manual_upgrade_auto_upgrade = {
 		icon = generic_operation
+		# 确保每次循环重新计算随机数，确保随机抽选不同的地块进行基建升级
+		fixed_random_seed = no
 		visible = {
 			always = no
-		}		# 后台运行
+		}
+		# 后台静默运行
 		available = {
 			has_country_flag = miku_infrastructure_manual_upgrade_auto_active
 			num_of_civilian_factories_available_for_projects >= 2
 			any_owned_state = {
+				is_controlled_by = ROOT
 				infrastructure < 5
 			}
 		}
 		days_remove = 60
 		modifier = {
-			civilian_factory_use = 1
-		}		# 占用1个民用工厂
+			civilian_factory_use = 1			# 占用1个民用工厂
+		}
 		remove_effect = {
 			random_owned_state = {
 				limit = {
@@ -89,15 +57,51 @@ miku_infrastructure_manual_upgrade_category = {
 					instant_build = yes
 				}
 			}
-			# 周期结束后继续下一次循环，如果条件满足
+			# 周期正常结束，如果条件依然满足则继续下一次升级，否则转入扫描休眠状态
 			if = {
 				limit = {
+					has_country_flag = miku_infrastructure_manual_upgrade_auto_active
+					num_of_civilian_factories_available_for_projects >= 2
 					any_owned_state = {
+						is_controlled_by = ROOT
 						infrastructure < 5
 					}
-					num_of_civilian_factories_available_for_projects >= 2
 				}
 				activate_decision = miku_infrastructure_manual_upgrade_auto_upgrade
+			}
+			else = {
+				activate_decision = miku_infrastructure_manual_upgrade_auto_scanner
+			}
+		}
+		# 极重要机制：如果在运行中（或刚启动时）由于民工减少或地块升满导致 available 条件失效，
+		# 决策会被系统自动取消（Cancel）。此时通过 cancel_effect 完美转入后台扫描器，防止循环中断！
+		cancel_effect = {
+			activate_decision = miku_infrastructure_manual_upgrade_auto_scanner
+		}
+	}
+	# 3. 后台扫描器：当条件不足时，每10天进行一次静默检索
+	miku_infrastructure_manual_upgrade_auto_scanner = {
+		icon = generic_research_bonus
+		visible = {
+			always = no
+		}
+		days_remove = 10
+		remove_effect = {
+			if = {
+				limit = {
+					has_country_flag = miku_infrastructure_manual_upgrade_auto_active
+					num_of_civilian_factories_available_for_projects >= 2
+					any_owned_state = {
+						is_controlled_by = ROOT
+						infrastructure < 5
+					}
+				}
+				# 条件恢复满足，唤醒工人
+				activate_decision = miku_infrastructure_manual_upgrade_auto_upgrade
+			}
+			else = {
+				# 条件仍不满足，继续保持扫描状态
+				activate_decision = miku_infrastructure_manual_upgrade_auto_scanner
 			}
 		}
 	}

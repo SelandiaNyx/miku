@@ -1,5 +1,6 @@
 # common\decisions\miku_resource_automation_decisions.txt
 miku_resource_automation_category = {
+	# 1. 【启动开关】只需点击一次，200PP，之后永久隐藏
 	miku_resource_automation_start = {
 		icon = generic_operation
 		cost = 200
@@ -19,15 +20,19 @@ miku_resource_automation_category = {
 			base = 100
 		}
 	}
+	# 2. 【隐形抽取循环】10天一次，完全在后台静默运行
 	miku_resource_auto_extract = {
 		icon = generic_operation
-		allowed = {
-		}
+		# 修正：强制每次循环重新计算随机数，避免每次都选中相同省份或产出相同资源
+		fixed_random_seed = no
 		visible = {
-			has_country_flag = miku_resource_automation_active
+			always = no
 		}
 		available = {
-			has_country_flag = miku_resource_automation_active
+			any_owned_state = {
+				is_controlled_by = ROOT
+				infrastructure > 0
+			}
 		}
 		days_remove = 10
 		remove_effect = {
@@ -37,7 +42,7 @@ miku_resource_automation_category = {
 				}
 				random_list = {
 					14 = {
-						# 抽中钢铁的概率
+						# 钢铁
 						random_list = {
 							40 = {
 								add_resource = {
@@ -45,32 +50,28 @@ miku_resource_automation_category = {
 									amount = 20
 								}
 							}
-							# 40% 概率给 20
 							30 = {
 								add_resource = {
 									type = steel
 									amount = 40
 								}
 							}
-							# 30% 概率给 40
 							20 = {
 								add_resource = {
 									type = steel
 									amount = 60
 								}
 							}
-							# 20% 概率给 60
 							10 = {
 								add_resource = {
 									type = steel
 									amount = 80
 								}
 							}
-							# 10% 概率给 80
 						}
 					}
 					14 = {
-						# 抽中铝的概率
+						# 铝
 						random_list = {
 							40 = {
 								add_resource = {
@@ -99,6 +100,7 @@ miku_resource_automation_category = {
 						}
 					}
 					14 = {
+						# 钨
 						random_list = {
 							50 = {
 								add_resource = {
@@ -121,7 +123,7 @@ miku_resource_automation_category = {
 						}
 					}
 					14 = {
-						# 抽中铬的概率
+						# 铬
 						random_list = {
 							40 = {
 								add_resource = {
@@ -150,7 +152,7 @@ miku_resource_automation_category = {
 						}
 					}
 					14 = {
-						# 抽中石油的概率
+						# 石油
 						random_list = {
 							40 = {
 								add_resource = {
@@ -179,7 +181,7 @@ miku_resource_automation_category = {
 						}
 					}
 					14 = {
-						# 抽中橡胶的概率
+						# 橡胶
 						random_list = {
 							40 = {
 								add_resource = {
@@ -208,6 +210,7 @@ miku_resource_automation_category = {
 						}
 					}
 					14 = {
+						# 提示：若您的MOD内未注册自定义资源"coal"，调用此段会产生 error.log 报错。
 						random_list = {
 							40 = {
 								add_resource = {
@@ -237,25 +240,40 @@ miku_resource_automation_category = {
 					}
 				}
 			}
-			set_country_flag = miku_resource_auto_extract_completed
-			clr_country_flag = miku_resource_automation_active
-			activate_decision = miku_resource_auto_prepare
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						infrastructure > 0
+					}
+				}
+				activate_decision = miku_resource_auto_extract
+			}
+			else = {
+				activate_decision = miku_resource_auto_extract_scanner
+			}
 		}
 	}
-	miku_resource_auto_prepare = {
-		icon = generic_operation
-		allowed = {
-		}
+	# 3. 【后台扫描器】
+	miku_resource_auto_extract_scanner = {
+		icon = generic_research_bonus
 		visible = {
-			has_country_flag = miku_resource_auto_extract_completed
+			always = no
 		}
-		available = {
-			has_country_flag = miku_resource_auto_extract_completed
-		}
-		complete_effect = {
-			set_country_flag = miku_resource_automation_active
-			clr_country_flag = miku_resource_auto_extract_completed
-			activate_decision = miku_resource_auto_extract
+		days_remove = 10
+		remove_effect = {
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+						infrastructure > 0
+					}
+				}
+				activate_decision = miku_resource_auto_extract
+			}
+			else = {
+				activate_decision = miku_resource_auto_extract_scanner
+			}
 		}
 	}
 }

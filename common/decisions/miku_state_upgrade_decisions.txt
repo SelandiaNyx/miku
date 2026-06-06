@@ -1,6 +1,6 @@
 # common\decisions\miku_state_upgrade_decisions.txt
 miku_state_upgrade_category = {
-	# 1. 【启动开关】只需点击一次，200PP，之后该决策永久隐藏
+	# 1. 【启动开关】
 	miku_state_upgrade_activation = {
 		icon = generic_decision
 		cost = 200
@@ -13,7 +13,6 @@ miku_state_upgrade_category = {
 		}
 		complete_effect = {
 			set_country_flag = miku_slots_automation_purchased
-			# 激活第一个工人循环
 			activate_decision = miku_state_upgrade_worker
 			log = "[MikuTech] State Expansion Protocol Activated."
 		}
@@ -21,30 +20,50 @@ miku_state_upgrade_category = {
 			base = 100
 		}
 	}
-	# 2. 【升级工人】30天循环一次，全自动，无需点击
+	# 2. 【升级工人】
 	miku_state_upgrade_worker = {
 		icon = generic_operation
-		# 只有买了功能才在后台运行
+		# 修正：保证每次升级能随机抽选不同的地块
+		fixed_random_seed = no
 		visible = {
 			always = no
 		}
-		# 只有当地图上有还没满级的地块时，它才会跑进度条
+		# 修正：仅当存在以下明确支持升级的地块类型时，工人才会保持运转，避免因未定义的 mod 类型或 enclave 导致后台死循环
 		available = {
 			any_owned_state = {
 				is_controlled_by = ROOT
-				NOT = {
-					has_state_category = megalopolis
+				OR = {
+					has_state_category = wasteland
+					has_state_category = enclave
+					has_state_category = tiny_island
+					has_state_category = small_island
+					has_state_category = pastoral
+					has_state_category = rural
+					has_state_category = town
+					has_state_category = large_town
+					has_state_category = city
+					has_state_category = large_city
+					has_state_category = metropolis
 				}
 			}
 		}
-		days_remove = 30		# 升级周期
-		# 周期结束时的效果
+		days_remove = 30
 		remove_effect = {
 			random_owned_state = {
 				limit = {
 					is_controlled_by = ROOT
-					NOT = {
-						has_state_category = megalopolis
+					OR = {
+						has_state_category = wasteland
+						has_state_category = enclave
+						has_state_category = tiny_island
+						has_state_category = small_island
+						has_state_category = pastoral
+						has_state_category = rural
+						has_state_category = town
+						has_state_category = large_town
+						has_state_category = city
+						has_state_category = large_city
+						has_state_category = metropolis
 					}
 				}
 				# --- 升级逻辑开始 ---
@@ -53,6 +72,12 @@ miku_state_upgrade_category = {
 						has_state_category = wasteland
 					}
 					set_state_category = pastoral
+				}
+				else_if = {
+					limit = {
+						has_state_category = enclave
+					}
+					set_state_category = tiny_island
 				}
 				else_if = {
 					limit = {
@@ -110,28 +135,37 @@ miku_state_upgrade_category = {
 				}
 				# --- 升级逻辑结束 ---
 			}
-			# 【核心逻辑】结束后自动激活下一次，实现无限循环
+			# 判定是否还有可升级的省份
 			if = {
 				limit = {
 					any_owned_state = {
 						is_controlled_by = ROOT
-						NOT = {
-							has_state_category = megalopolis
+						OR = {
+							has_state_category = wasteland
+							has_state_category = enclave
+							has_state_category = tiny_island
+							has_state_category = small_island
+							has_state_category = pastoral
+							has_state_category = rural
+							has_state_category = town
+							has_state_category = large_town
+							has_state_category = city
+							has_state_category = large_city
+							has_state_category = metropolis
 						}
 					}
 				}
 				activate_decision = miku_state_upgrade_worker
 			}
 			else = {
-				# 如果领土全满了，启动后台扫描器，等待新领土
+				# 全部升级完毕或暂无此类省份，进入低耗扫描器状态
 				activate_decision = miku_state_upgrade_scanner
 			}
 		}
 	}
-	# 3. 【后台扫描器】当所有地块都满级时，它每10天扫描一次是否有新领土
+	# 3. 【后台扫描器】
 	miku_state_upgrade_scanner = {
 		icon = generic_research_bonus
-		# 平时它是隐藏的，只有在需要扫描时才在后台运作
 		visible = {
 			always = no
 		}
@@ -141,16 +175,24 @@ miku_state_upgrade_category = {
 				limit = {
 					any_owned_state = {
 						is_controlled_by = ROOT
-						NOT = {
-							has_state_category = megalopolis
+						OR = {
+							has_state_category = wasteland
+							has_state_category = enclave
+							has_state_category = tiny_island
+							has_state_category = small_island
+							has_state_category = pastoral
+							has_state_category = rural
+							has_state_category = town
+							has_state_category = large_town
+							has_state_category = city
+							has_state_category = large_city
+							has_state_category = metropolis
 						}
 					}
 				}
-				# 发现新领土或未满级地块，唤醒工人
 				activate_decision = miku_state_upgrade_worker
 			}
 			else = {
-				# 依然全满，继续下一次扫描
 				activate_decision = miku_state_upgrade_scanner
 			}
 		}

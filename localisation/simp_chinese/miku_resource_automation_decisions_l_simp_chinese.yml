@@ -1,9 +1,14 @@
 ﻿l_simp_chinese:
-  miku_resource_automation_start: "启动资源勘探自动化"
-  miku_resource_automation_start_desc: "建立自动化资源勘探与开采体系。"
-
-  miku_resource_auto_extract: "资源勘探与开采"
-  miku_resource_auto_extract_desc: "自动在全国范围内开展资源勘探与开发工作。"
-
-  miku_resource_auto_prepare: "资源开采准备"
-  miku_resource_auto_prepare_desc: "为下一轮资源勘探与开发工作进行准备。"
+ miku_resource_automation_category:0 "资源开采自动化协议"
+ miku_resource_automation_category_desc:0 "通过深层钻探与自动化地质勘探系统，在全国控制领土内持续发掘战略性资源。"
+ 
+ miku_resource_automation_start:0 "激活深层资源开采自动化"
+ miku_resource_automation_start_desc:0 "授权地质开采部门在我国控制范围内推行自动化勘探。该协议仅需启动一次，激活后将永久并在后台静默运行。\n\n§H项目运行机制：§!\n- 每隔 §Y10天§!，将自动挑选一个我国控制且基建等级大于0的省份，在其中发现或追加开采一定数量的战略资源（包括：钢铁、铝、钨、铬、石油、橡胶或煤炭）。\n- 发现的资源种类与具体增产数量由地理地质条件随机决定。\n- 如果在极特殊情况下无可开采省份，项目会自动暂停并等待新省份被我们控制。"
+ 
+ miku_resource_auto_extract:0 "深层资源自动化开采中"
+ miku_resource_auto_extract_desc:0 "自动化勘探机正在全国控制领地进行深层扫描，并自动调配设备开采新发现的资源矿脉。"
+ miku_resource_auto_extract_scanner:0 "深层资源自动化开采（休眠中）"
+ miku_resource_auto_extract_scanner_desc:0 "当前由于无可开采的省份（需要省份基建等级大于0），自动化资源探寻系统已进入低能耗待命状态。"
+ 
+ miku_resource_investment_completed_tt:0 "§G✔ 「深层资源开采自动化协议」已正式激活，完全转入后台运行！§!"
+ miku_extra_resource_unlocked_tt:0 "§G✔ 解锁「资源开采自动化」决策分类§!"

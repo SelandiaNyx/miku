@@ -1,9 +1,13 @@
 ﻿l_simp_chinese:
-  miku_infrastructure_manual_upgrade: "升级基础设施"
-  miku_infrastructure_manual_upgrade_desc: "集中资源改善指定地区的基础设施水平。"
-
-  miku_infrastructure_auto_start: "启动基础设施自动化"
-  miku_infrastructure_auto_start_desc: "建立全国基础设施建设体系，自动提升地区基础设施等级。"
-
-  miku_infrastructure_auto_upgrade: "基础设施建设工程"
-  miku_infrastructure_auto_upgrade_desc: "自动选择一个基础设施未达上限的地区进行建设。"
+ miku_infrastructure_manual_upgrade_category:0 "基础设施自动化建设"
+ miku_infrastructure_manual_upgrade_category_desc:0 "管理全国基础设施的自动化规划与升级计划。"
+ 
+ miku_infrastructure_manual_upgrade_auto_start:0 "启动基础设施自动化建设协议"
+ miku_infrastructure_manual_upgrade_auto_start_desc:0 "批准一项全国性的工业投资计划。启动后，工业部门将自动规划并出资升级我国实际控制的各地区基础设施。\n\n§H项目运行机制：§!\n- 本协议将持续占用 §Y1个民用工厂§! 用于建设施工。\n- 每隔 §Y60天§!，将自动选择一个基建未满级（少于5级）的控制省份，免费提升其 §Y1级基础设施§!。\n- 若可用民用工厂不足 2 个，或全国省份基建已全部升满（5级），该项目将自动转入 §Y后台休眠状态§!。一旦条件恢复，会自动重新唤醒，无需重复操作。"
+ 
+ miku_infrastructure_manual_upgrade_auto_upgrade:0 "基础设施自动化建设中"
+ miku_infrastructure_manual_upgrade_auto_upgrade_desc:0 "施工队伍正在后勤部门的自动化统筹下，对国内选定的落后省份进行道路、铁路和枢纽站升级。"
+ miku_infrastructure_manual_upgrade_auto_scanner:0 "基础设施自动化建设（休眠中）"
+ miku_infrastructure_manual_upgrade_auto_scanner_desc:0 "当前由于可用民用工厂不足，或全国控制省份的基建均已达到5级上限。自动化监测系统正在静默运行，等待条件恢复或新领土被纳入控制。"
+ 
+ miku_infrastructure_unlocked_tt:0 "§G✔ 解锁「基础设施自动化建设」决策分类§!"

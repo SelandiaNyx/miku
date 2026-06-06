@@ -1,4 +1,4 @@
-# common\decisions\categories\miku_focus_tree_categoires.txt
+# common\decisions\categories\miku_focus_tree_categories.txt
 miku_focus_tree_category = {
 	icon = generic_decision
 	allowed = {

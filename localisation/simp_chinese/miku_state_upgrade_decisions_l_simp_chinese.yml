@@ -1,9 +1,13 @@
 ﻿l_simp_chinese:
-  miku_state_upgrade_activation: "启动地块开发自动化"
-  miku_state_upgrade_activation_desc: "建立全国地块开发体系，自动提升辖区发展等级。"
-
-  miku_state_upgrade_worker: "地块开发作业"
-  miku_state_upgrade_worker_desc: "自动选择一个未达到最高等级的地区进行开发建设。"
-
-  miku_state_upgrade_scanner: "领土发展监测"
-  miku_state_upgrade_scanner_desc: "持续监测新获得领土及未完成开发的地区。"
+ miku_state_upgrade_category:0 "省份行政级别升级自动化"
+ miku_state_upgrade_category_desc:0 "管理对全国各省份行政区划及城市级别的规划，通过提升城市等级来永久扩展建筑槽位上限。"
+ 
+ miku_state_upgrade_activation:0 "启动领土行政级别扩建协议"
+ miku_state_upgrade_activation_desc:0 "批准内政部门对我国所实际控制的领土进行长期的自动化行政重新划分与资源扩建。\n\n§H项目运行机制：§!\n- 该协议完全在后台自动运行，不需要玩家手动操作。\n- 每隔 §Y30天§!，系统会自动选中一个尚未达到「特大城市（Megalopolis）」级别的省份，永久提升其行政级别（例如：荒地 -> 牧区 -> 农村 -> 城镇 -> 大城镇 -> 城市 -> 大城市 -> 大都市 -> 特大城市），以此直接§Y永久增加该省份的建筑槽位§!。\n- 如果当前控制的所有省份均已达到特大城市（上限），该工人程序会自动休眠。一旦我们未来吞并、夺取了新的、等级未满的省份，扫描器会在10天内自动唤醒工人，重新开始升级工作。"
+ 
+ miku_state_upgrade_worker:0 "领土行政级别扩建进行中"
+ miku_state_upgrade_worker_desc:0 "行政规划部门正在重新测绘并分配该省份的工业配额，扩充当地的基建与建筑槽位承载能力。"
+ miku_state_upgrade_scanner:0 "领土行政级别扩建（休眠中）"
+ miku_state_upgrade_scanner_desc:0 "当前我国内政部门所控制的所有领土都已经升至「特大城市（Megalopolis）」级别，或无可升级地块。后台扫描器正持续运作，检测是否有新领土被纳入国家版图。"
+ 
+ miku_expand_state_slots_unlocked_tt:0 "§G✔ 解锁「省份行政级别升级自动化」决策分类§!"
